@@ -7,6 +7,7 @@ const passport = require("./config/passport");
 const authRoutes = require("./routes/authRoutes");
 const reportRoutes = require("./routes/reportRoutes");
 const dashboardRoutes = require("./routes/dashboardRoutes");
+const voiceRoutes = require("./routes/voiceRoutes");
 const errorHandler = require("./middleware/errorMiddleware");
 
 const app = express();
@@ -43,6 +44,7 @@ app.use("/uploads", express.static(path.join(process.cwd(), "uploads")));
 app.use("/api/auth", authRoutes);
 app.use("/api/reports", reportRoutes);
 app.use("/api/dashboard", dashboardRoutes);
+app.use("/api/voice", voiceRoutes);
 
 app.get("/api/health", (req, res) => {
     res.json({
