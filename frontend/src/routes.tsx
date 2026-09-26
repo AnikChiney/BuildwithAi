@@ -6,9 +6,11 @@ import { SubmissionStatusPage } from './pages/SubmissionStatusPage';
 import { GovernmentPage } from './pages/GovernmentPage';
 import { MethodPage } from './pages/MethodPage';
 import { NotFoundPage } from './pages/NotFoundPage';
+import { LoginPage } from './pages/LoginPage';
 
 export const AppRoutes: React.FC = () => <Routes>
   <Route path="/" element={<LandingPage/>}/>
+  <Route path="/login" element={<LoginPage/>}/>
   <Route path="/submit" element={<CitizenRequestPage/>}/>
   <Route path="/submit/:requestId" element={<SubmissionStatusPage/>}/>
   <Route path="/government/*" element={<GovernmentPage/>}/>
