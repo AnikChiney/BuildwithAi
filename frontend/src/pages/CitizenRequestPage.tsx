@@ -6,6 +6,7 @@ import { analyseCitizenRequest, transcribeVoiceRequest } from '../services/ai';
 import { reportsApi, SubmittedReport } from '../services/reportsApi';
 import { AnalysisResult, CivicLanguage, CivicSeverity } from '../types/civic';
 import { VoiceRecorder } from '../components/request/VoiceRecorder';
+import { MediaUpload, SelectedMedia } from '../components/request/MediaUpload';
 import { useAuth } from '../context/AuthContext';
 
 const labels:Record<CivicLanguage,string>={en:'English',bn:'বাংলা',hi:'हिन्दी'};
@@ -50,7 +51,7 @@ const isRealMode = (import.meta.env.VITE_AI_MODE || 'demo') === 'real';
 export const CitizenRequestPage:React.FC=()=>{
  const nav=useNavigate(); const {user,loading:authLoading,logout}=useAuth();
  const [lang,setLang]=useState<CivicLanguage>('bn'); const [text,setText]=useState(examples.bn); const [mode,setMode]=useState<'text'|'voice'>('text'); const [wardId,setWardId]=useState('WARD-12'); const [busy,setBusy]=useState(false); const [error,setError]=useState('');
- const [transcribing,setTranscribing]=useState(false); const [hasVoiceTranscript,setHasVoiceTranscript]=useState(false); const [voiceBlob,setVoiceBlob]=useState<Blob|null>(null);
+ const [transcribing,setTranscribing]=useState(false); const [hasVoiceTranscript,setHasVoiceTranscript]=useState(false); const [voiceBlob,setVoiceBlob]=useState<Blob|null>(null); const [mediaFiles,setMediaFiles]=useState<SelectedMedia[]>([]);
 
  const submit=async(e:React.FormEvent)=>{
   e.preventDefault();
@@ -69,6 +70,14 @@ export const CitizenRequestPage:React.FC=()=>{
       const report = mode==='voice' && voiceBlob
         ? await reportsApi.submitVoice(voiceBlob,{state:ward.state,district:ward.district})
         : await reportsApi.submitText(text,{state:ward.state,district:ward.district});
+
+      if (mediaFiles.length) {
+        await reportsApi.uploadMedia(
+          report._id,
+          mediaFiles.map(item => item.file)
+        );
+      }
+
       const result=reportToAnalysisResult(report,ward,lang);
       sessionStorage.setItem('civicsignal:lastAnalysis',JSON.stringify(result));
       nav('/submit/'+report._id);
@@ -141,6 +150,11 @@ export const CitizenRequestPage:React.FC=()=>{
            </div>
          )}
        </div>}
+       <MediaUpload
+         files={mediaFiles}
+         onChange={setMediaFiles}
+         disabled={busy || transcribing || (isRealMode && !user)}
+       />
        <div className="input-grid"><label>Language<select value={lang} onChange={e=>{const l=e.target.value as CivicLanguage;setLang(l);if(mode==='text')setText(examples[l]);}}>{Object.entries(labels).map(([v,l])=><option key={v} value={v}>{l}</option>)}</select></label><label>{isRealMode?'Location':'Demo location'}<select value={wardId} onChange={e=>setWardId(e.target.value)}>{wards.map(w=><option key={w.id} value={w.id}>{w.label}</option>)}</select></label></div>
        <div className="privacy-note"><MapPin size={15}/><span>{isRealMode?'Location maps to a state/district pair sent to the backend.':'Location is a simulated demo selection. No personal identifier is collected.'}</span></div>
        {error&&<div className="form-error">{error}</div>}
