@@ -7,6 +7,19 @@ export interface ReportLocation {
   longitude?: number;
 }
 
+
+export interface ReportMedia {
+  _id: string;
+  reportId: string;
+  type: 'image' | 'video';
+  originalName: string;
+  fileName: string;
+  fileUrl: string;
+  mimeType: string;
+  size: number;
+  createdAt: string;
+}
+
 export interface SubmittedReport {
   _id: string;
   inputType: 'text' | 'voice';
@@ -45,6 +58,26 @@ export const reportsApi = {
   },
 
   // POST /api/reports/voice (requires an authenticated session)
+  // POST /api/reports/:id/media (requires an authenticated session)
+  async uploadMedia(reportId: string, files: File[]): Promise<ReportMedia[]> {
+    if (!files.length) return [];
+
+    const formData = new FormData();
+    files.forEach(file => formData.append('media', file, file.name));
+
+    const res = await fetch(`${BACKEND_API_URL}/api/reports/${reportId}/media`, {
+      method: 'POST',
+      credentials: 'include',
+      body: formData,
+    });
+
+    const data = await parseJson(res);
+    if (res.status === 401) throw new Error('Please sign in to upload media.');
+    if (!res.ok) throw new Error(data?.message || 'Could not upload the selected media.');
+
+    return data?.media ?? [];
+  },
+
   async submitVoice(audioBlob: Blob, location: ReportLocation): Promise<SubmittedReport> {
     const formData = new FormData();
     const ext = audioBlob.type.split('/')[1]?.split(';')[0] || 'webm';
