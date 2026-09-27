@@ -1,33 +1,24 @@
 import React,{useState} from 'react';
 import { useNavigate } from 'react-router-dom';
-import { ArrowLeft, CheckCircle2, Languages, MapPin, Mic, Send, Sparkles } from 'lucide-react';
+import { ArrowLeft, CheckCircle2, Languages, MapPin, Mic, Send, Sparkles, LogOut } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { analyseCitizenRequest, transcribeVoiceRequest } from '../services/ai';
 import { reportsApi, SubmittedReport } from '../services/reportsApi';
 import { AnalysisResult, CivicLanguage, CivicSeverity } from '../types/civic';
 import { VoiceRecorder } from '../components/request/VoiceRecorder';
 import { MediaUpload, SelectedMedia } from '../components/request/MediaUpload';
-import { ProfileMenu } from '../components/common/ProfileMenu';
 import { useAuth } from '../context/AuthContext';
+import { useCivicData } from '../services/civicData';
 
 const labels:Record<CivicLanguage,string>={en:'English',bn:'বাংলা',hi:'हिन्दी'};
 const examples:Record<CivicLanguage,string>={en:'There is severe waterlogging near our school and the road becomes difficult to use during rain.',bn:'আমাদের এলাকায় বৃষ্টির সময় প্রচুর জল জমে যায় এবং রাস্তা দিয়ে চলাচল করা কঠিন।',hi:'हमारे इलाके में बारिश के दौरान बहुत पानी जमा हो जाता है और सड़क पर चलना मुश्किल हो जाता है।'};
-
-interface WardMeta { id:string; label:string; state:string; district:string; }
-const wards:WardMeta[]=[
-  {id:'WARD-12',label:'Ballygunge · Ward 12',state:'West Bengal',district:'Kolkata'},
-  {id:'WARD-01',label:'Salt Lake · Ward 01',state:'West Bengal',district:'Kolkata'},
-  {id:'WARD-02',label:'New Town · Ward 02',state:'West Bengal',district:'Kolkata'},
-  {id:'WARD-07',label:'Behala East · Ward 07',state:'West Bengal',district:'Kolkata'},
-  {id:'WARD-10',label:'Garia · Ward 10',state:'West Bengal',district:'Kolkata'},
-];
 
 const urgencyScore:Record<SubmittedReport['urgency'],number>={low:3,medium:5,high:8,critical:10};
 const urgencySeverity:Record<SubmittedReport['urgency'],CivicSeverity>={low:'low',medium:'medium',high:'high',critical:'high'};
 
 // Adapts a persisted backend Report into the shape SubmissionStatusPage
 // already knows how to render, so the live path can reuse it as-is.
-function reportToAnalysisResult(report:SubmittedReport, ward:WardMeta, fallbackLang:CivicLanguage):AnalysisResult{
+function reportToAnalysisResult(report:SubmittedReport, ward:{id:string;name:string;state:string;district:string}, fallbackLang:CivicLanguage):AnalysisResult{
   const language=(['en','bn','hi'] as const).includes(report.originalLanguage as CivicLanguage)?(report.originalLanguage as CivicLanguage):fallbackLang;
   return {
     requestId: report._id,
@@ -38,7 +29,7 @@ function reportToAnalysisResult(report:SubmittedReport, ward:WardMeta, fallbackL
     severity: urgencySeverity[report.urgency],
     urgency: urgencyScore[report.urgency],
     wardId: ward.id,
-    wardName: ward.label.split(' · ')[0],
+    wardName: ward.name,
     similarCount: 0,
     clusterId: report._id.slice(-6).toUpperCase(),
     affectedPopulation: 0,
@@ -50,10 +41,13 @@ function reportToAnalysisResult(report:SubmittedReport, ward:WardMeta, fallbackL
 const isRealMode = (import.meta.env.VITE_AI_MODE || 'demo') === 'real';
 
 export const CitizenRequestPage:React.FC=()=>{
- const nav=useNavigate(); const {user,loading:authLoading}=useAuth();
+ const nav=useNavigate(); const {user,loading:authLoading,logout}=useAuth(); const data=useCivicData();
  const [lang,setLang]=useState<CivicLanguage>('bn'); const [text,setText]=useState(examples.bn); const [mode,setMode]=useState<'text'|'voice'>('text'); const [wardId,setWardId]=useState('WARD-12'); const [busy,setBusy]=useState(false); const [error,setError]=useState('');
+ const wards=data.wards;
  const [transcribing,setTranscribing]=useState(false); const [hasVoiceTranscript,setHasVoiceTranscript]=useState(false); const [voiceBlob,setVoiceBlob]=useState<Blob|null>(null); const [mediaFiles,setMediaFiles]=useState<SelectedMedia[]>([]);
 
+ if (data.loading) return <div className="citizen-page"><main className="citizen-shell"><div className="intake-card"><h2>Loading civic locations…</h2><p>Connecting to the MongoDB-backed dataset.</p></div></main></div>;
+ if (data.error || !wards.length) return <div className="citizen-page"><main className="citizen-shell"><div className="intake-card"><h2>Dataset unavailable</h2><p>{data.error || 'No wards were found in the dataset.'}</p></div></main></div>;
  const submit=async(e:React.FormEvent)=>{
   e.preventDefault();
   if(mode==='voice'&&isRealMode){
@@ -114,7 +108,10 @@ export const CitizenRequestPage:React.FC=()=>{
    <Link to="/" className="brand"><span className="brand-mark">CS</span><span><strong>CivicSignal AI</strong><small>Citizen Portal</small></span></Link>
    <div className="demo-chip">{isRealMode?'LIVE BACKEND':'DEMO ENVIRONMENT'}</div>
    <div style={{display:'flex',alignItems:'center',gap:14}}>
-    {isRealMode&&!authLoading && <ProfileMenu />}
+    {isRealMode&&!authLoading&&(user
+      ? <span className="text-link" style={{display:'flex',alignItems:'center',gap:6}}>{user.name}<button type="button" onClick={()=>logout()} title="Sign out" style={{display:'inline-flex',alignItems:'center'}}><LogOut size={13}/></button></span>
+      : <Link to={`/login?next=/submit`} className="text-link">Sign in</Link>
+    )}
     <Link to="/government" className="text-link">Government Command Center →</Link>
    </div>
   </header>
@@ -153,7 +150,7 @@ export const CitizenRequestPage:React.FC=()=>{
          onChange={setMediaFiles}
          disabled={busy || transcribing || (isRealMode && !user)}
        />
-       <div className="input-grid"><label>Language<select value={lang} onChange={e=>{const l=e.target.value as CivicLanguage;setLang(l);if(mode==='text')setText(examples[l]);}}>{Object.entries(labels).map(([v,l])=><option key={v} value={v}>{l}</option>)}</select></label><label>{isRealMode?'Location':'Demo location'}<select value={wardId} onChange={e=>setWardId(e.target.value)}>{wards.map(w=><option key={w.id} value={w.id}>{w.label}</option>)}</select></label></div>
+       <div className="input-grid"><label>Language<select value={lang} onChange={e=>{const l=e.target.value as CivicLanguage;setLang(l);if(mode==='text')setText(examples[l]);}}>{Object.entries(labels).map(([v,l])=><option key={v} value={v}>{l}</option>)}</select></label><label>{isRealMode?'Location':'Demo location'}<select value={wardId} onChange={e=>setWardId(e.target.value)}>{wards.map(w=><option key={w.id} value={w.id}>{w.name} · {w.id.replace('WARD-','Ward ')}</option>)}</select></label></div>
        <div className="privacy-note"><MapPin size={15}/><span>{isRealMode?'Location maps to a state/district pair sent to the backend.':'Location is a simulated demo selection. No personal identifier is collected.'}</span></div>
        {error&&<div className="form-error">{error}</div>}
        <button className="btn btn-primary btn-lg full" disabled={busy||transcribing||(isRealMode&&!authLoading&&!user)||(mode==='voice'&&!isRealMode&&!text.trim())||(mode==='voice'&&isRealMode&&!voiceBlob)}>{busy?'Submitting…':<>Analyse My Request <Send size={16}/></>}</button>
