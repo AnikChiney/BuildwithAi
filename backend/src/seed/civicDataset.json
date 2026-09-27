@@ -1,0 +1,2894 @@
+{
+  "name": "CivicSignal Kolkata Civic Intelligence Dataset",
+  "version": "1.0.0",
+  "city": "Kolkata",
+  "state": "West Bengal",
+  "country": "India",
+  "generatedAt": "2026-09-27T05:26:13.104Z",
+  "wards": [
+    {
+      "id": "WARD-01",
+      "name": "Salt Lake",
+      "zone": "Sector V",
+      "centroid": [
+        22.5726,
+        88.432
+      ],
+      "population": 52400,
+      "state": "West Bengal",
+      "district": "Kolkata"
+    },
+    {
+      "id": "WARD-02",
+      "name": "New Town",
+      "zone": "Action Area I",
+      "centroid": [
+        22.5968,
+        88.4795
+      ],
+      "population": 61200,
+      "state": "West Bengal",
+      "district": "Kolkata"
+    },
+    {
+      "id": "WARD-03",
+      "name": "Dum Dum",
+      "zone": "Central",
+      "centroid": [
+        22.6225,
+        88.398
+      ],
+      "population": 54800,
+      "state": "West Bengal",
+      "district": "Kolkata"
+    },
+    {
+      "id": "WARD-04",
+      "name": "Kestopur",
+      "zone": "Canal Belt",
+      "centroid": [
+        22.5965,
+        88.4295
+      ],
+      "population": 58300,
+      "state": "West Bengal",
+      "district": "Kolkata"
+    },
+    {
+      "id": "WARD-05",
+      "name": "Lake Town",
+      "zone": "VIP Road",
+      "centroid": [
+        22.6052,
+        88.408
+      ],
+      "population": 46700,
+      "state": "West Bengal",
+      "district": "Kolkata"
+    },
+    {
+      "id": "WARD-06",
+      "name": "Rajarhat",
+      "zone": "Peri-urban",
+      "centroid": [
+        22.621,
+        88.463
+      ],
+      "population": 49800,
+      "state": "West Bengal",
+      "district": "Kolkata"
+    },
+    {
+      "id": "WARD-07",
+      "name": "Behala East",
+      "zone": "Joka Corridor",
+      "centroid": [
+        22.489,
+        88.32
+      ],
+      "population": 63200,
+      "state": "West Bengal",
+      "district": "Kolkata"
+    },
+    {
+      "id": "WARD-08",
+      "name": "Behala West",
+      "zone": "Sakher Bazar",
+      "centroid": [
+        22.4915,
+        88.295
+      ],
+      "population": 58700,
+      "state": "West Bengal",
+      "district": "Kolkata"
+    },
+    {
+      "id": "WARD-09",
+      "name": "Jadavpur",
+      "zone": "Central",
+      "centroid": [
+        22.498,
+        88.37
+      ],
+      "population": 65500,
+      "state": "West Bengal",
+      "district": "Kolkata"
+    },
+    {
+      "id": "WARD-10",
+      "name": "Garia",
+      "zone": "EM Bypass",
+      "centroid": [
+        22.4635,
+        88.386
+      ],
+      "population": 72100,
+      "state": "West Bengal",
+      "district": "Kolkata"
+    },
+    {
+      "id": "WARD-11",
+      "name": "Tollygunge",
+      "zone": "Metro Corridor",
+      "centroid": [
+        22.5,
+        88.345
+      ],
+      "population": 55900,
+      "state": "West Bengal",
+      "district": "Kolkata"
+    },
+    {
+      "id": "WARD-12",
+      "name": "Ballygunge",
+      "zone": "Circular Road",
+      "centroid": [
+        22.526,
+        88.365
+      ],
+      "population": 48100,
+      "state": "West Bengal",
+      "district": "Kolkata"
+    },
+    {
+      "id": "WARD-13",
+      "name": "Park Circus",
+      "zone": "Seven Point",
+      "centroid": [
+        22.5395,
+        88.364
+      ],
+      "population": 61100,
+      "state": "West Bengal",
+      "district": "Kolkata"
+    },
+    {
+      "id": "WARD-14",
+      "name": "Topsia",
+      "zone": "EM Bypass",
+      "centroid": [
+        22.544,
+        88.3865
+      ],
+      "population": 54600,
+      "state": "West Bengal",
+      "district": "Kolkata"
+    },
+    {
+      "id": "WARD-15",
+      "name": "Entally",
+      "zone": "CIT Road",
+      "centroid": [
+        22.55,
+        88.373
+      ],
+      "population": 51400,
+      "state": "West Bengal",
+      "district": "Kolkata"
+    },
+    {
+      "id": "WARD-16",
+      "name": "Garden Reach",
+      "zone": "Dock Belt",
+      "centroid": [
+        22.529,
+        88.292
+      ],
+      "population": 60300,
+      "state": "West Bengal",
+      "district": "Kolkata"
+    },
+    {
+      "id": "WARD-17",
+      "name": "Alipore",
+      "zone": "Diamond Harbour Rd",
+      "centroid": [
+        22.535,
+        88.333
+      ],
+      "population": 43800,
+      "state": "West Bengal",
+      "district": "Kolkata"
+    },
+    {
+      "id": "WARD-18",
+      "name": "Shyambazar",
+      "zone": "North Kolkata",
+      "centroid": [
+        22.602,
+        88.369
+      ],
+      "population": 49600,
+      "state": "West Bengal",
+      "district": "Kolkata"
+    },
+    {
+      "id": "WARD-19",
+      "name": "Belgachia",
+      "zone": "Canal Road",
+      "centroid": [
+        22.61,
+        88.382
+      ],
+      "population": 53100,
+      "state": "West Bengal",
+      "district": "Kolkata"
+    },
+    {
+      "id": "WARD-20",
+      "name": "Tangra",
+      "zone": "Topsia Road",
+      "centroid": [
+        22.556,
+        88.392
+      ],
+      "population": 57500,
+      "state": "West Bengal",
+      "district": "Kolkata"
+    }
+  ],
+  "requests": [
+    {
+      "id": "REQ-2026-10231",
+      "wardId": "WARD-12",
+      "ward": "Ballygunge",
+      "category": "Drainage",
+      "language": "bn",
+      "text": "আমাদের এলাকায় বৃষ্টির সময় প্রচুর জল জমে যায় এবং রাস্তা দিয়ে চলাচল করা কঠিন।",
+      "severity": "high",
+      "urgency": 9,
+      "affectedPopulation": 18400,
+      "date": "2026-09-22"
+    },
+    {
+      "id": "REQ-2026-00002",
+      "wardId": "WARD-01",
+      "ward": "Salt Lake",
+      "category": "Roads",
+      "language": "en",
+      "text": "Large potholes are making the road unsafe.",
+      "severity": "medium",
+      "urgency": 7,
+      "affectedPopulation": 35165,
+      "date": "2026-09-02"
+    },
+    {
+      "id": "REQ-2026-00003",
+      "wardId": "WARD-11",
+      "ward": "Tollygunge",
+      "category": "Lighting",
+      "language": "en",
+      "text": "The road is dark after sunset.",
+      "severity": "high",
+      "urgency": 8,
+      "affectedPopulation": 12820,
+      "date": "2026-05-19"
+    },
+    {
+      "id": "REQ-2026-00004",
+      "wardId": "WARD-06",
+      "ward": "Rajarhat",
+      "category": "Waste",
+      "language": "en",
+      "text": "Waste is piling up beside the market.",
+      "severity": "high",
+      "urgency": 10,
+      "affectedPopulation": 22928,
+      "date": "2026-09-07"
+    },
+    {
+      "id": "REQ-2026-00005",
+      "wardId": "WARD-09",
+      "ward": "Jadavpur",
+      "category": "Roads",
+      "language": "bn",
+      "text": "বড় বড় গর্তের কারণে রাস্তা দিয়ে চলাচল করা কঠিন।",
+      "severity": "medium",
+      "urgency": 6,
+      "affectedPopulation": 18774,
+      "date": "2026-06-23"
+    },
+    {
+      "id": "REQ-2026-00006",
+      "wardId": "WARD-15",
+      "ward": "Entally",
+      "category": "Drainage",
+      "language": "en",
+      "text": "Rainwater stays on the street for hours.",
+      "severity": "low",
+      "urgency": 3,
+      "affectedPopulation": 24925,
+      "date": "2026-05-04"
+    },
+    {
+      "id": "REQ-2026-00007",
+      "wardId": "WARD-10",
+      "ward": "Garia",
+      "category": "Drainage",
+      "language": "en",
+      "text": "Rainwater stays on the street for hours.",
+      "severity": "medium",
+      "urgency": 5,
+      "affectedPopulation": 33538,
+      "date": "2026-07-11"
+    },
+    {
+      "id": "REQ-2026-00008",
+      "wardId": "WARD-13",
+      "ward": "Park Circus",
+      "category": "Lighting",
+      "language": "bn",
+      "text": "গলির স্ট্রিট লাইটগুলি অনেকদিন ধরে কাজ করছে না।",
+      "severity": "high",
+      "urgency": 8,
+      "affectedPopulation": 32589,
+      "date": "2026-05-02"
+    },
+    {
+      "id": "REQ-2026-00009",
+      "wardId": "WARD-14",
+      "ward": "Topsia",
+      "category": "Roads",
+      "language": "bn",
+      "text": "বড় বড় গর্তের কারণে রাস্তা দিয়ে চলাচল করা কঠিন।",
+      "severity": "high",
+      "urgency": 9,
+      "affectedPopulation": 8867,
+      "date": "2026-08-12"
+    },
+    {
+      "id": "REQ-2026-00010",
+      "wardId": "WARD-03",
+      "ward": "Dum Dum",
+      "category": "Drainage",
+      "language": "bn",
+      "text": "বৃষ্টির পরে স্কুলের কাছে প্রচুর জল জমে যায়।",
+      "severity": "medium",
+      "urgency": 7,
+      "affectedPopulation": 20212,
+      "date": "2026-08-03"
+    },
+    {
+      "id": "REQ-2026-00011",
+      "wardId": "WARD-03",
+      "ward": "Dum Dum",
+      "category": "Lighting",
+      "language": "bn",
+      "text": "গলির স্ট্রিট লাইটগুলি অনেকদিন ধরে কাজ করছে না।",
+      "severity": "medium",
+      "urgency": 6,
+      "affectedPopulation": 20737,
+      "date": "2026-07-22"
+    },
+    {
+      "id": "REQ-2026-00012",
+      "wardId": "WARD-18",
+      "ward": "Shyambazar",
+      "category": "Public Transport",
+      "language": "en",
+      "text": "The nearest bus stop is overcrowded.",
+      "severity": "high",
+      "urgency": 10,
+      "affectedPopulation": 20669,
+      "date": "2026-09-06"
+    },
+    {
+      "id": "REQ-2026-00013",
+      "wardId": "WARD-05",
+      "ward": "Lake Town",
+      "category": "Drainage",
+      "language": "en",
+      "text": "Open drain needs cleaning before the monsoon.",
+      "severity": "medium",
+      "urgency": 5,
+      "affectedPopulation": 29073,
+      "date": "2026-09-21"
+    },
+    {
+      "id": "REQ-2026-00014",
+      "wardId": "WARD-13",
+      "ward": "Park Circus",
+      "category": "Drainage",
+      "language": "hi",
+      "text": "बारिश के बाद स्कूल के पास बहुत पानी जमा हो जाता है।",
+      "severity": "medium",
+      "urgency": 5,
+      "affectedPopulation": 30480,
+      "date": "2026-05-07"
+    },
+    {
+      "id": "REQ-2026-00015",
+      "wardId": "WARD-01",
+      "ward": "Salt Lake",
+      "category": "Drainage",
+      "language": "en",
+      "text": "Open drain needs cleaning before the monsoon.",
+      "severity": "medium",
+      "urgency": 5,
+      "affectedPopulation": 12219,
+      "date": "2026-05-12"
+    },
+    {
+      "id": "REQ-2026-00016",
+      "wardId": "WARD-12",
+      "ward": "Ballygunge",
+      "category": "Drainage",
+      "language": "en",
+      "text": "Rainwater stays on the street for hours.",
+      "severity": "high",
+      "urgency": 9,
+      "affectedPopulation": 16848,
+      "date": "2026-05-04"
+    },
+    {
+      "id": "REQ-2026-00017",
+      "wardId": "WARD-17",
+      "ward": "Alipore",
+      "category": "Lighting",
+      "language": "bn",
+      "text": "গলির স্ট্রিট লাইটগুলি অনেকদিন ধরে কাজ করছে না।",
+      "severity": "high",
+      "urgency": 8,
+      "affectedPopulation": 24405,
+      "date": "2026-08-27"
+    },
+    {
+      "id": "REQ-2026-00018",
+      "wardId": "WARD-13",
+      "ward": "Park Circus",
+      "category": "Water",
+      "language": "en",
+      "text": "The local pipeline needs repair.",
+      "severity": "high",
+      "urgency": 10,
+      "affectedPopulation": 19182,
+      "date": "2026-05-23"
+    },
+    {
+      "id": "REQ-2026-00019",
+      "wardId": "WARD-17",
+      "ward": "Alipore",
+      "category": "Waste",
+      "language": "en",
+      "text": "Waste is piling up beside the market.",
+      "severity": "high",
+      "urgency": 8,
+      "affectedPopulation": 25337,
+      "date": "2026-07-21"
+    },
+    {
+      "id": "REQ-2026-00020",
+      "wardId": "WARD-04",
+      "ward": "Kestopur",
+      "category": "Waste",
+      "language": "hi",
+      "text": "बाजार के पास कचरा नियमित रूप से नहीं उठता।",
+      "severity": "medium",
+      "urgency": 7,
+      "affectedPopulation": 15155,
+      "date": "2026-08-12"
+    },
+    {
+      "id": "REQ-2026-00021",
+      "wardId": "WARD-14",
+      "ward": "Topsia",
+      "category": "Public Transport",
+      "language": "bn",
+      "text": "ব্যস্ত সময়ে বাসের পরিষেবা খুব কম।",
+      "severity": "high",
+      "urgency": 10,
+      "affectedPopulation": 21620,
+      "date": "2026-07-12"
+    },
+    {
+      "id": "REQ-2026-00022",
+      "wardId": "WARD-02",
+      "ward": "New Town",
+      "category": "Drainage",
+      "language": "bn",
+      "text": "বৃষ্টির পরে স্কুলের কাছে প্রচুর জল জমে যায়।",
+      "severity": "high",
+      "urgency": 10,
+      "affectedPopulation": 25319,
+      "date": "2026-07-26"
+    },
+    {
+      "id": "REQ-2026-00023",
+      "wardId": "WARD-12",
+      "ward": "Ballygunge",
+      "category": "Waste",
+      "language": "en",
+      "text": "There is an open dumping spot near homes.",
+      "severity": "medium",
+      "urgency": 6,
+      "affectedPopulation": 18694,
+      "date": "2026-07-03"
+    },
+    {
+      "id": "REQ-2026-00024",
+      "wardId": "WARD-16",
+      "ward": "Garden Reach",
+      "category": "Public Transport",
+      "language": "en",
+      "text": "Public transport access is poor for this neighbourhood.",
+      "severity": "medium",
+      "urgency": 7,
+      "affectedPopulation": 14683,
+      "date": "2026-06-01"
+    },
+    {
+      "id": "REQ-2026-00025",
+      "wardId": "WARD-02",
+      "ward": "New Town",
+      "category": "Waste",
+      "language": "hi",
+      "text": "बाजार के पास कचरा नियमित रूप से नहीं उठता।",
+      "severity": "medium",
+      "urgency": 6,
+      "affectedPopulation": 40735,
+      "date": "2026-06-18"
+    },
+    {
+      "id": "REQ-2026-00026",
+      "wardId": "WARD-10",
+      "ward": "Garia",
+      "category": "Drainage",
+      "language": "bn",
+      "text": "বৃষ্টির পরে স্কুলের কাছে প্রচুর জল জমে যায়।",
+      "severity": "medium",
+      "urgency": 6,
+      "affectedPopulation": 43576,
+      "date": "2026-06-01"
+    },
+    {
+      "id": "REQ-2026-00027",
+      "wardId": "WARD-04",
+      "ward": "Kestopur",
+      "category": "Drainage",
+      "language": "en",
+      "text": "Open drain needs cleaning before the monsoon.",
+      "severity": "high",
+      "urgency": 9,
+      "affectedPopulation": 37924,
+      "date": "2026-07-15"
+    },
+    {
+      "id": "REQ-2026-00028",
+      "wardId": "WARD-13",
+      "ward": "Park Circus",
+      "category": "Waste",
+      "language": "bn",
+      "text": "বাজারের পাশে আবর্জনা নিয়মিত পরিষ্কার হয় না।",
+      "severity": "medium",
+      "urgency": 7,
+      "affectedPopulation": 38495,
+      "date": "2026-06-20"
+    },
+    {
+      "id": "REQ-2026-00029",
+      "wardId": "WARD-01",
+      "ward": "Salt Lake",
+      "category": "Lighting",
+      "language": "en",
+      "text": "The underpass needs better lighting.",
+      "severity": "medium",
+      "urgency": 7,
+      "affectedPopulation": 17254,
+      "date": "2026-09-17"
+    },
+    {
+      "id": "REQ-2026-00030",
+      "wardId": "WARD-10",
+      "ward": "Garia",
+      "category": "Lighting",
+      "language": "en",
+      "text": "Streetlights are not working along the lane.",
+      "severity": "high",
+      "urgency": 9,
+      "affectedPopulation": 30948,
+      "date": "2026-09-01"
+    },
+    {
+      "id": "REQ-2026-00031",
+      "wardId": "WARD-15",
+      "ward": "Entally",
+      "category": "Waste",
+      "language": "en",
+      "text": "Waste is piling up beside the market.",
+      "severity": "medium",
+      "urgency": 7,
+      "affectedPopulation": 30534,
+      "date": "2026-09-08"
+    },
+    {
+      "id": "REQ-2026-00032",
+      "wardId": "WARD-14",
+      "ward": "Topsia",
+      "category": "Waste",
+      "language": "hi",
+      "text": "बाजार के पास कचरा नियमित रूप से नहीं उठता।",
+      "severity": "low",
+      "urgency": 2,
+      "affectedPopulation": 20701,
+      "date": "2026-08-15"
+    },
+    {
+      "id": "REQ-2026-00033",
+      "wardId": "WARD-06",
+      "ward": "Rajarhat",
+      "category": "Water",
+      "language": "en",
+      "text": "Low pressure leaves homes without water.",
+      "severity": "medium",
+      "urgency": 5,
+      "affectedPopulation": 25094,
+      "date": "2026-07-05"
+    },
+    {
+      "id": "REQ-2026-00034",
+      "wardId": "WARD-04",
+      "ward": "Kestopur",
+      "category": "Drainage",
+      "language": "bn",
+      "text": "বৃষ্টির পরে স্কুলের কাছে প্রচুর জল জমে যায়।",
+      "severity": "medium",
+      "urgency": 5,
+      "affectedPopulation": 35437,
+      "date": "2026-06-23"
+    },
+    {
+      "id": "REQ-2026-00035",
+      "wardId": "WARD-08",
+      "ward": "Behala West",
+      "category": "Roads",
+      "language": "en",
+      "text": "The road surface is broken near the market.",
+      "severity": "high",
+      "urgency": 8,
+      "affectedPopulation": 9434,
+      "date": "2026-09-15"
+    },
+    {
+      "id": "REQ-2026-00036",
+      "wardId": "WARD-08",
+      "ward": "Behala West",
+      "category": "Drainage",
+      "language": "en",
+      "text": "Open drain needs cleaning before the monsoon.",
+      "severity": "medium",
+      "urgency": 5,
+      "affectedPopulation": 40176,
+      "date": "2026-05-03"
+    },
+    {
+      "id": "REQ-2026-00037",
+      "wardId": "WARD-05",
+      "ward": "Lake Town",
+      "category": "Drainage",
+      "language": "hi",
+      "text": "बारिश के बाद स्कूल के पास बहुत पानी जमा हो जाता है।",
+      "severity": "high",
+      "urgency": 8,
+      "affectedPopulation": 28040,
+      "date": "2026-07-13"
+    },
+    {
+      "id": "REQ-2026-00038",
+      "wardId": "WARD-02",
+      "ward": "New Town",
+      "category": "Waste",
+      "language": "bn",
+      "text": "বাজারের পাশে আবর্জনা নিয়মিত পরিষ্কার হয় না।",
+      "severity": "high",
+      "urgency": 8,
+      "affectedPopulation": 23496,
+      "date": "2026-05-09"
+    },
+    {
+      "id": "REQ-2026-00039",
+      "wardId": "WARD-19",
+      "ward": "Belgachia",
+      "category": "Lighting",
+      "language": "hi",
+      "text": "गली की स्ट्रीट लाइट कई दिनों से बंद है।",
+      "severity": "medium",
+      "urgency": 5,
+      "affectedPopulation": 33162,
+      "date": "2026-08-01"
+    },
+    {
+      "id": "REQ-2026-00040",
+      "wardId": "WARD-06",
+      "ward": "Rajarhat",
+      "category": "Water",
+      "language": "hi",
+      "text": "हमारे इलाके में पानी की सप्लाई नियमित नहीं है।",
+      "severity": "medium",
+      "urgency": 7,
+      "affectedPopulation": 14000,
+      "date": "2026-05-06"
+    },
+    {
+      "id": "REQ-2026-00041",
+      "wardId": "WARD-05",
+      "ward": "Lake Town",
+      "category": "Roads",
+      "language": "en",
+      "text": "We need urgent repair of the approach road.",
+      "severity": "medium",
+      "urgency": 5,
+      "affectedPopulation": 18452,
+      "date": "2026-06-09"
+    },
+    {
+      "id": "REQ-2026-00042",
+      "wardId": "WARD-07",
+      "ward": "Behala East",
+      "category": "Drainage",
+      "language": "en",
+      "text": "Severe waterlogging near the school after rain.",
+      "severity": "high",
+      "urgency": 10,
+      "affectedPopulation": 27354,
+      "date": "2026-06-15"
+    },
+    {
+      "id": "REQ-2026-00043",
+      "wardId": "WARD-02",
+      "ward": "New Town",
+      "category": "Waste",
+      "language": "en",
+      "text": "There is an open dumping spot near homes.",
+      "severity": "medium",
+      "urgency": 7,
+      "affectedPopulation": 32329,
+      "date": "2026-06-11"
+    },
+    {
+      "id": "REQ-2026-00044",
+      "wardId": "WARD-04",
+      "ward": "Kestopur",
+      "category": "Waste",
+      "language": "bn",
+      "text": "বাজারের পাশে আবর্জনা নিয়মিত পরিষ্কার হয় না।",
+      "severity": "medium",
+      "urgency": 5,
+      "affectedPopulation": 9202,
+      "date": "2026-07-14"
+    },
+    {
+      "id": "REQ-2026-00045",
+      "wardId": "WARD-03",
+      "ward": "Dum Dum",
+      "category": "Drainage",
+      "language": "bn",
+      "text": "বৃষ্টির পরে স্কুলের কাছে প্রচুর জল জমে যায়।",
+      "severity": "low",
+      "urgency": 4,
+      "affectedPopulation": 15520,
+      "date": "2026-07-02"
+    },
+    {
+      "id": "REQ-2026-00046",
+      "wardId": "WARD-09",
+      "ward": "Jadavpur",
+      "category": "Drainage",
+      "language": "en",
+      "text": "Open drain needs cleaning before the monsoon.",
+      "severity": "high",
+      "urgency": 9,
+      "affectedPopulation": 18631,
+      "date": "2026-07-07"
+    },
+    {
+      "id": "REQ-2026-00047",
+      "wardId": "WARD-07",
+      "ward": "Behala East",
+      "category": "Drainage",
+      "language": "en",
+      "text": "Rainwater stays on the street for hours.",
+      "severity": "high",
+      "urgency": 10,
+      "affectedPopulation": 27024,
+      "date": "2026-05-03"
+    },
+    {
+      "id": "REQ-2026-00048",
+      "wardId": "WARD-05",
+      "ward": "Lake Town",
+      "category": "Drainage",
+      "language": "en",
+      "text": "Severe waterlogging near the school after rain.",
+      "severity": "medium",
+      "urgency": 6,
+      "affectedPopulation": 12984,
+      "date": "2026-09-17"
+    },
+    {
+      "id": "REQ-2026-00049",
+      "wardId": "WARD-17",
+      "ward": "Alipore",
+      "category": "Roads",
+      "language": "bn",
+      "text": "বড় বড় গর্তের কারণে রাস্তা দিয়ে চলাচল করা কঠিন।",
+      "severity": "medium",
+      "urgency": 6,
+      "affectedPopulation": 13415,
+      "date": "2026-09-21"
+    },
+    {
+      "id": "REQ-2026-00050",
+      "wardId": "WARD-02",
+      "ward": "New Town",
+      "category": "Waste",
+      "language": "bn",
+      "text": "বাজারের পাশে আবর্জনা নিয়মিত পরিষ্কার হয় না।",
+      "severity": "medium",
+      "urgency": 5,
+      "affectedPopulation": 34521,
+      "date": "2026-09-27"
+    },
+    {
+      "id": "REQ-2026-00051",
+      "wardId": "WARD-16",
+      "ward": "Garden Reach",
+      "category": "Drainage",
+      "language": "bn",
+      "text": "বৃষ্টির পরে স্কুলের কাছে প্রচুর জল জমে যায়।",
+      "severity": "high",
+      "urgency": 8,
+      "affectedPopulation": 21007,
+      "date": "2026-05-13"
+    },
+    {
+      "id": "REQ-2026-00052",
+      "wardId": "WARD-17",
+      "ward": "Alipore",
+      "category": "Waste",
+      "language": "en",
+      "text": "Garbage collection is irregular in our block.",
+      "severity": "medium",
+      "urgency": 5,
+      "affectedPopulation": 12924,
+      "date": "2026-08-26"
+    },
+    {
+      "id": "REQ-2026-00053",
+      "wardId": "WARD-01",
+      "ward": "Salt Lake",
+      "category": "Public Transport",
+      "language": "hi",
+      "text": "व्यस्त समय में बस सेवा बहुत कम है।",
+      "severity": "medium",
+      "urgency": 7,
+      "affectedPopulation": 21516,
+      "date": "2026-05-28"
+    },
+    {
+      "id": "REQ-2026-00054",
+      "wardId": "WARD-05",
+      "ward": "Lake Town",
+      "category": "Public Transport",
+      "language": "bn",
+      "text": "ব্যস্ত সময়ে বাসের পরিষেবা খুব কম।",
+      "severity": "medium",
+      "urgency": 6,
+      "affectedPopulation": 8976,
+      "date": "2026-07-25"
+    },
+    {
+      "id": "REQ-2026-00055",
+      "wardId": "WARD-01",
+      "ward": "Salt Lake",
+      "category": "Water",
+      "language": "en",
+      "text": "Low pressure leaves homes without water.",
+      "severity": "high",
+      "urgency": 10,
+      "affectedPopulation": 16633,
+      "date": "2026-09-05"
+    },
+    {
+      "id": "REQ-2026-00056",
+      "wardId": "WARD-01",
+      "ward": "Salt Lake",
+      "category": "Drainage",
+      "language": "en",
+      "text": "Severe waterlogging near the school after rain.",
+      "severity": "medium",
+      "urgency": 6,
+      "affectedPopulation": 28289,
+      "date": "2026-07-15"
+    },
+    {
+      "id": "REQ-2026-00057",
+      "wardId": "WARD-09",
+      "ward": "Jadavpur",
+      "category": "Lighting",
+      "language": "hi",
+      "text": "गली की स्ट्रीट लाइट कई दिनों से बंद है।",
+      "severity": "high",
+      "urgency": 8,
+      "affectedPopulation": 20257,
+      "date": "2026-05-27"
+    },
+    {
+      "id": "REQ-2026-00058",
+      "wardId": "WARD-10",
+      "ward": "Garia",
+      "category": "Public Transport",
+      "language": "hi",
+      "text": "व्यस्त समय में बस सेवा बहुत कम है।",
+      "severity": "high",
+      "urgency": 8,
+      "affectedPopulation": 14395,
+      "date": "2026-09-09"
+    },
+    {
+      "id": "REQ-2026-00059",
+      "wardId": "WARD-19",
+      "ward": "Belgachia",
+      "category": "Drainage",
+      "language": "hi",
+      "text": "बारिश के बाद स्कूल के पास बहुत पानी जमा हो जाता है।",
+      "severity": "low",
+      "urgency": 2,
+      "affectedPopulation": 22505,
+      "date": "2026-08-13"
+    },
+    {
+      "id": "REQ-2026-00060",
+      "wardId": "WARD-01",
+      "ward": "Salt Lake",
+      "category": "Drainage",
+      "language": "bn",
+      "text": "বৃষ্টির পরে স্কুলের কাছে প্রচুর জল জমে যায়।",
+      "severity": "medium",
+      "urgency": 5,
+      "affectedPopulation": 17772,
+      "date": "2026-07-04"
+    },
+    {
+      "id": "REQ-2026-00061",
+      "wardId": "WARD-17",
+      "ward": "Alipore",
+      "category": "Drainage",
+      "language": "en",
+      "text": "Open drain needs cleaning before the monsoon.",
+      "severity": "low",
+      "urgency": 4,
+      "affectedPopulation": 6852,
+      "date": "2026-07-09"
+    },
+    {
+      "id": "REQ-2026-00062",
+      "wardId": "WARD-07",
+      "ward": "Behala East",
+      "category": "Roads",
+      "language": "hi",
+      "text": "बड़े गड्ढों के कारण सड़क पर चलना मुश्किल है।",
+      "severity": "high",
+      "urgency": 9,
+      "affectedPopulation": 19234,
+      "date": "2026-05-27"
+    },
+    {
+      "id": "REQ-2026-00063",
+      "wardId": "WARD-13",
+      "ward": "Park Circus",
+      "category": "Lighting",
+      "language": "en",
+      "text": "Several public lights have been out for weeks.",
+      "severity": "medium",
+      "urgency": 5,
+      "affectedPopulation": 35549,
+      "date": "2026-08-01"
+    },
+    {
+      "id": "REQ-2026-00064",
+      "wardId": "WARD-16",
+      "ward": "Garden Reach",
+      "category": "Water",
+      "language": "hi",
+      "text": "हमारे इलाके में पानी की सप्लाई नियमित नहीं है।",
+      "severity": "medium",
+      "urgency": 7,
+      "affectedPopulation": 23997,
+      "date": "2026-06-21"
+    },
+    {
+      "id": "REQ-2026-00065",
+      "wardId": "WARD-17",
+      "ward": "Alipore",
+      "category": "Lighting",
+      "language": "en",
+      "text": "The road is dark after sunset.",
+      "severity": "high",
+      "urgency": 9,
+      "affectedPopulation": 13743,
+      "date": "2026-07-13"
+    },
+    {
+      "id": "REQ-2026-00066",
+      "wardId": "WARD-13",
+      "ward": "Park Circus",
+      "category": "Roads",
+      "language": "bn",
+      "text": "বড় বড় গর্তের কারণে রাস্তা দিয়ে চলাচল করা কঠিন।",
+      "severity": "high",
+      "urgency": 10,
+      "affectedPopulation": 16150,
+      "date": "2026-08-18"
+    },
+    {
+      "id": "REQ-2026-00067",
+      "wardId": "WARD-04",
+      "ward": "Kestopur",
+      "category": "Waste",
+      "language": "hi",
+      "text": "बाजार के पास कचरा नियमित रूप से नहीं उठता।",
+      "severity": "medium",
+      "urgency": 5,
+      "affectedPopulation": 11653,
+      "date": "2026-07-18"
+    },
+    {
+      "id": "REQ-2026-00068",
+      "wardId": "WARD-02",
+      "ward": "New Town",
+      "category": "Drainage",
+      "language": "en",
+      "text": "The drain overflows and blocks the main road.",
+      "severity": "low",
+      "urgency": 3,
+      "affectedPopulation": 23111,
+      "date": "2026-09-07"
+    },
+    {
+      "id": "REQ-2026-00069",
+      "wardId": "WARD-07",
+      "ward": "Behala East",
+      "category": "Roads",
+      "language": "en",
+      "text": "We need urgent repair of the approach road.",
+      "severity": "medium",
+      "urgency": 5,
+      "affectedPopulation": 26978,
+      "date": "2026-06-03"
+    },
+    {
+      "id": "REQ-2026-00070",
+      "wardId": "WARD-05",
+      "ward": "Lake Town",
+      "category": "Roads",
+      "language": "en",
+      "text": "Footpath and road edge are damaged.",
+      "severity": "medium",
+      "urgency": 5,
+      "affectedPopulation": 7833,
+      "date": "2026-08-19"
+    },
+    {
+      "id": "REQ-2026-00071",
+      "wardId": "WARD-09",
+      "ward": "Jadavpur",
+      "category": "Drainage",
+      "language": "hi",
+      "text": "बारिश के बाद स्कूल के पास बहुत पानी जमा हो जाता है।",
+      "severity": "low",
+      "urgency": 2,
+      "affectedPopulation": 15386,
+      "date": "2026-09-22"
+    },
+    {
+      "id": "REQ-2026-00072",
+      "wardId": "WARD-02",
+      "ward": "New Town",
+      "category": "Waste",
+      "language": "bn",
+      "text": "বাজারের পাশে আবর্জনা নিয়মিত পরিষ্কার হয় না।",
+      "severity": "high",
+      "urgency": 8,
+      "affectedPopulation": 17008,
+      "date": "2026-05-21"
+    },
+    {
+      "id": "REQ-2026-00073",
+      "wardId": "WARD-14",
+      "ward": "Topsia",
+      "category": "Public Transport",
+      "language": "bn",
+      "text": "ব্যস্ত সময়ে বাসের পরিষেবা খুব কম।",
+      "severity": "medium",
+      "urgency": 5,
+      "affectedPopulation": 17209,
+      "date": "2026-09-07"
+    },
+    {
+      "id": "REQ-2026-00074",
+      "wardId": "WARD-07",
+      "ward": "Behala East",
+      "category": "Drainage",
+      "language": "bn",
+      "text": "বৃষ্টির পরে স্কুলের কাছে প্রচুর জল জমে যায়।",
+      "severity": "medium",
+      "urgency": 6,
+      "affectedPopulation": 31885,
+      "date": "2026-06-16"
+    },
+    {
+      "id": "REQ-2026-00075",
+      "wardId": "WARD-10",
+      "ward": "Garia",
+      "category": "Water",
+      "language": "en",
+      "text": "Residents depend on tankers during shortages.",
+      "severity": "medium",
+      "urgency": 5,
+      "affectedPopulation": 18512,
+      "date": "2026-08-03"
+    },
+    {
+      "id": "REQ-2026-00076",
+      "wardId": "WARD-04",
+      "ward": "Kestopur",
+      "category": "Water",
+      "language": "hi",
+      "text": "हमारे इलाके में पानी की सप्लाई नियमित नहीं है।",
+      "severity": "medium",
+      "urgency": 6,
+      "affectedPopulation": 22230,
+      "date": "2026-08-07"
+    },
+    {
+      "id": "REQ-2026-00077",
+      "wardId": "WARD-01",
+      "ward": "Salt Lake",
+      "category": "Drainage",
+      "language": "hi",
+      "text": "बारिश के बाद स्कूल के पास बहुत पानी जमा हो जाता है।",
+      "severity": "high",
+      "urgency": 8,
+      "affectedPopulation": 14511,
+      "date": "2026-06-09"
+    },
+    {
+      "id": "REQ-2026-00078",
+      "wardId": "WARD-15",
+      "ward": "Entally",
+      "category": "Roads",
+      "language": "hi",
+      "text": "बड़े गड्ढों के कारण सड़क पर चलना मुश्किल है।",
+      "severity": "medium",
+      "urgency": 6,
+      "affectedPopulation": 33446,
+      "date": "2026-05-20"
+    },
+    {
+      "id": "REQ-2026-00079",
+      "wardId": "WARD-02",
+      "ward": "New Town",
+      "category": "Roads",
+      "language": "en",
+      "text": "The road surface is broken near the market.",
+      "severity": "medium",
+      "urgency": 5,
+      "affectedPopulation": 22419,
+      "date": "2026-07-24"
+    },
+    {
+      "id": "REQ-2026-00080",
+      "wardId": "WARD-02",
+      "ward": "New Town",
+      "category": "Drainage",
+      "language": "en",
+      "text": "The drain overflows and blocks the main road.",
+      "severity": "high",
+      "urgency": 10,
+      "affectedPopulation": 10253,
+      "date": "2026-08-27"
+    },
+    {
+      "id": "REQ-2026-00081",
+      "wardId": "WARD-07",
+      "ward": "Behala East",
+      "category": "Roads",
+      "language": "en",
+      "text": "Large potholes are making the road unsafe.",
+      "severity": "high",
+      "urgency": 8,
+      "affectedPopulation": 42693,
+      "date": "2026-05-18"
+    },
+    {
+      "id": "REQ-2026-00082",
+      "wardId": "WARD-20",
+      "ward": "Tangra",
+      "category": "Roads",
+      "language": "en",
+      "text": "We need urgent repair of the approach road.",
+      "severity": "low",
+      "urgency": 2,
+      "affectedPopulation": 30928,
+      "date": "2026-06-12"
+    },
+    {
+      "id": "REQ-2026-00083",
+      "wardId": "WARD-10",
+      "ward": "Garia",
+      "category": "Roads",
+      "language": "en",
+      "text": "Footpath and road edge are damaged.",
+      "severity": "high",
+      "urgency": 9,
+      "affectedPopulation": 41217,
+      "date": "2026-05-13"
+    },
+    {
+      "id": "REQ-2026-00084",
+      "wardId": "WARD-01",
+      "ward": "Salt Lake",
+      "category": "Drainage",
+      "language": "hi",
+      "text": "बारिश के बाद स्कूल के पास बहुत पानी जमा हो जाता है।",
+      "severity": "high",
+      "urgency": 8,
+      "affectedPopulation": 18320,
+      "date": "2026-07-20"
+    },
+    {
+      "id": "REQ-2026-00085",
+      "wardId": "WARD-01",
+      "ward": "Salt Lake",
+      "category": "Lighting",
+      "language": "bn",
+      "text": "গলির স্ট্রিট লাইটগুলি অনেকদিন ধরে কাজ করছে না।",
+      "severity": "high",
+      "urgency": 10,
+      "affectedPopulation": 35137,
+      "date": "2026-05-01"
+    },
+    {
+      "id": "REQ-2026-00086",
+      "wardId": "WARD-16",
+      "ward": "Garden Reach",
+      "category": "Drainage",
+      "language": "bn",
+      "text": "বৃষ্টির পরে স্কুলের কাছে প্রচুর জল জমে যায়।",
+      "severity": "low",
+      "urgency": 3,
+      "affectedPopulation": 36067,
+      "date": "2026-06-16"
+    },
+    {
+      "id": "REQ-2026-00087",
+      "wardId": "WARD-03",
+      "ward": "Dum Dum",
+      "category": "Public Transport",
+      "language": "en",
+      "text": "The nearest bus stop is overcrowded.",
+      "severity": "medium",
+      "urgency": 6,
+      "affectedPopulation": 19126,
+      "date": "2026-09-03"
+    },
+    {
+      "id": "REQ-2026-00088",
+      "wardId": "WARD-10",
+      "ward": "Garia",
+      "category": "Roads",
+      "language": "en",
+      "text": "Footpath and road edge are damaged.",
+      "severity": "high",
+      "urgency": 8,
+      "affectedPopulation": 32411,
+      "date": "2026-06-14"
+    },
+    {
+      "id": "REQ-2026-00089",
+      "wardId": "WARD-18",
+      "ward": "Shyambazar",
+      "category": "Public Transport",
+      "language": "en",
+      "text": "Bus frequency is too low during peak hours.",
+      "severity": "high",
+      "urgency": 9,
+      "affectedPopulation": 33959,
+      "date": "2026-06-08"
+    },
+    {
+      "id": "REQ-2026-00090",
+      "wardId": "WARD-02",
+      "ward": "New Town",
+      "category": "Roads",
+      "language": "hi",
+      "text": "बड़े गड्ढों के कारण सड़क पर चलना मुश्किल है।",
+      "severity": "medium",
+      "urgency": 5,
+      "affectedPopulation": 19068,
+      "date": "2026-09-09"
+    },
+    {
+      "id": "REQ-2026-00091",
+      "wardId": "WARD-07",
+      "ward": "Behala East",
+      "category": "Lighting",
+      "language": "en",
+      "text": "The road is dark after sunset.",
+      "severity": "high",
+      "urgency": 8,
+      "affectedPopulation": 40213,
+      "date": "2026-09-07"
+    },
+    {
+      "id": "REQ-2026-00092",
+      "wardId": "WARD-06",
+      "ward": "Rajarhat",
+      "category": "Roads",
+      "language": "hi",
+      "text": "बड़े गड्ढों के कारण सड़क पर चलना मुश्किल है।",
+      "severity": "medium",
+      "urgency": 7,
+      "affectedPopulation": 34612,
+      "date": "2026-05-01"
+    },
+    {
+      "id": "REQ-2026-00093",
+      "wardId": "WARD-09",
+      "ward": "Jadavpur",
+      "category": "Waste",
+      "language": "hi",
+      "text": "बाजार के पास कचरा नियमित रूप से नहीं उठता।",
+      "severity": "high",
+      "urgency": 9,
+      "affectedPopulation": 11640,
+      "date": "2026-09-27"
+    },
+    {
+      "id": "REQ-2026-00094",
+      "wardId": "WARD-11",
+      "ward": "Tollygunge",
+      "category": "Drainage",
+      "language": "en",
+      "text": "The drain overflows and blocks the main road.",
+      "severity": "medium",
+      "urgency": 7,
+      "affectedPopulation": 11637,
+      "date": "2026-09-23"
+    },
+    {
+      "id": "REQ-2026-00095",
+      "wardId": "WARD-12",
+      "ward": "Ballygunge",
+      "category": "Roads",
+      "language": "en",
+      "text": "The road surface is broken near the market.",
+      "severity": "high",
+      "urgency": 9,
+      "affectedPopulation": 26586,
+      "date": "2026-06-27"
+    },
+    {
+      "id": "REQ-2026-00096",
+      "wardId": "WARD-01",
+      "ward": "Salt Lake",
+      "category": "Roads",
+      "language": "bn",
+      "text": "বড় বড় গর্তের কারণে রাস্তা দিয়ে চলাচল করা কঠিন।",
+      "severity": "medium",
+      "urgency": 5,
+      "affectedPopulation": 30780,
+      "date": "2026-09-16"
+    },
+    {
+      "id": "REQ-2026-00097",
+      "wardId": "WARD-01",
+      "ward": "Salt Lake",
+      "category": "Drainage",
+      "language": "en",
+      "text": "The drain overflows and blocks the main road.",
+      "severity": "medium",
+      "urgency": 7,
+      "affectedPopulation": 19323,
+      "date": "2026-07-14"
+    },
+    {
+      "id": "REQ-2026-00098",
+      "wardId": "WARD-20",
+      "ward": "Tangra",
+      "category": "Lighting",
+      "language": "en",
+      "text": "Streetlights are not working along the lane.",
+      "severity": "high",
+      "urgency": 10,
+      "affectedPopulation": 21795,
+      "date": "2026-07-21"
+    },
+    {
+      "id": "REQ-2026-00099",
+      "wardId": "WARD-04",
+      "ward": "Kestopur",
+      "category": "Lighting",
+      "language": "en",
+      "text": "Streetlights are not working along the lane.",
+      "severity": "medium",
+      "urgency": 6,
+      "affectedPopulation": 35050,
+      "date": "2026-08-19"
+    },
+    {
+      "id": "REQ-2026-00100",
+      "wardId": "WARD-18",
+      "ward": "Shyambazar",
+      "category": "Water",
+      "language": "en",
+      "text": "Water supply is irregular in our neighbourhood.",
+      "severity": "high",
+      "urgency": 8,
+      "affectedPopulation": 9868,
+      "date": "2026-09-12"
+    },
+    {
+      "id": "REQ-2026-00101",
+      "wardId": "WARD-14",
+      "ward": "Topsia",
+      "category": "Drainage",
+      "language": "en",
+      "text": "The drain overflows and blocks the main road.",
+      "severity": "medium",
+      "urgency": 5,
+      "affectedPopulation": 22920,
+      "date": "2026-06-10"
+    },
+    {
+      "id": "REQ-2026-00102",
+      "wardId": "WARD-02",
+      "ward": "New Town",
+      "category": "Public Transport",
+      "language": "hi",
+      "text": "व्यस्त समय में बस सेवा बहुत कम है।",
+      "severity": "high",
+      "urgency": 10,
+      "affectedPopulation": 12084,
+      "date": "2026-09-23"
+    },
+    {
+      "id": "REQ-2026-00103",
+      "wardId": "WARD-16",
+      "ward": "Garden Reach",
+      "category": "Drainage",
+      "language": "bn",
+      "text": "বৃষ্টির পরে স্কুলের কাছে প্রচুর জল জমে যায়।",
+      "severity": "medium",
+      "urgency": 5,
+      "affectedPopulation": 15113,
+      "date": "2026-06-02"
+    },
+    {
+      "id": "REQ-2026-00104",
+      "wardId": "WARD-07",
+      "ward": "Behala East",
+      "category": "Roads",
+      "language": "en",
+      "text": "Large potholes are making the road unsafe.",
+      "severity": "high",
+      "urgency": 10,
+      "affectedPopulation": 40203,
+      "date": "2026-05-22"
+    },
+    {
+      "id": "REQ-2026-00105",
+      "wardId": "WARD-17",
+      "ward": "Alipore",
+      "category": "Drainage",
+      "language": "en",
+      "text": "Rainwater stays on the street for hours.",
+      "severity": "medium",
+      "urgency": 6,
+      "affectedPopulation": 16689,
+      "date": "2026-09-08"
+    },
+    {
+      "id": "REQ-2026-00106",
+      "wardId": "WARD-08",
+      "ward": "Behala West",
+      "category": "Water",
+      "language": "en",
+      "text": "Residents depend on tankers during shortages.",
+      "severity": "high",
+      "urgency": 8,
+      "affectedPopulation": 23826,
+      "date": "2026-08-25"
+    },
+    {
+      "id": "REQ-2026-00107",
+      "wardId": "WARD-12",
+      "ward": "Ballygunge",
+      "category": "Waste",
+      "language": "hi",
+      "text": "बाजार के पास कचरा नियमित रूप से नहीं उठता।",
+      "severity": "medium",
+      "urgency": 5,
+      "affectedPopulation": 18606,
+      "date": "2026-05-26"
+    },
+    {
+      "id": "REQ-2026-00108",
+      "wardId": "WARD-08",
+      "ward": "Behala West",
+      "category": "Roads",
+      "language": "en",
+      "text": "The road surface is broken near the market.",
+      "severity": "high",
+      "urgency": 10,
+      "affectedPopulation": 25318,
+      "date": "2026-05-25"
+    },
+    {
+      "id": "REQ-2026-00109",
+      "wardId": "WARD-09",
+      "ward": "Jadavpur",
+      "category": "Roads",
+      "language": "hi",
+      "text": "बड़े गड्ढों के कारण सड़क पर चलना मुश्किल है।",
+      "severity": "high",
+      "urgency": 8,
+      "affectedPopulation": 34774,
+      "date": "2026-05-07"
+    },
+    {
+      "id": "REQ-2026-00110",
+      "wardId": "WARD-02",
+      "ward": "New Town",
+      "category": "Waste",
+      "language": "en",
+      "text": "Waste is piling up beside the market.",
+      "severity": "medium",
+      "urgency": 5,
+      "affectedPopulation": 37219,
+      "date": "2026-09-25"
+    },
+    {
+      "id": "REQ-2026-00111",
+      "wardId": "WARD-04",
+      "ward": "Kestopur",
+      "category": "Roads",
+      "language": "bn",
+      "text": "বড় বড় গর্তের কারণে রাস্তা দিয়ে চলাচল করা কঠিন।",
+      "severity": "high",
+      "urgency": 10,
+      "affectedPopulation": 27723,
+      "date": "2026-09-17"
+    },
+    {
+      "id": "REQ-2026-00112",
+      "wardId": "WARD-04",
+      "ward": "Kestopur",
+      "category": "Roads",
+      "language": "en",
+      "text": "Footpath and road edge are damaged.",
+      "severity": "high",
+      "urgency": 9,
+      "affectedPopulation": 37456,
+      "date": "2026-06-26"
+    },
+    {
+      "id": "REQ-2026-00113",
+      "wardId": "WARD-16",
+      "ward": "Garden Reach",
+      "category": "Drainage",
+      "language": "bn",
+      "text": "বৃষ্টির পরে স্কুলের কাছে প্রচুর জল জমে যায়।",
+      "severity": "low",
+      "urgency": 4,
+      "affectedPopulation": 28282,
+      "date": "2026-05-09"
+    },
+    {
+      "id": "REQ-2026-00114",
+      "wardId": "WARD-20",
+      "ward": "Tangra",
+      "category": "Lighting",
+      "language": "en",
+      "text": "Several public lights have been out for weeks.",
+      "severity": "high",
+      "urgency": 9,
+      "affectedPopulation": 20017,
+      "date": "2026-05-15"
+    },
+    {
+      "id": "REQ-2026-00115",
+      "wardId": "WARD-04",
+      "ward": "Kestopur",
+      "category": "Water",
+      "language": "hi",
+      "text": "हमारे इलाके में पानी की सप्लाई नियमित नहीं है।",
+      "severity": "medium",
+      "urgency": 6,
+      "affectedPopulation": 39718,
+      "date": "2026-09-22"
+    },
+    {
+      "id": "REQ-2026-00116",
+      "wardId": "WARD-18",
+      "ward": "Shyambazar",
+      "category": "Lighting",
+      "language": "bn",
+      "text": "গলির স্ট্রিট লাইটগুলি অনেকদিন ধরে কাজ করছে না।",
+      "severity": "high",
+      "urgency": 10,
+      "affectedPopulation": 18834,
+      "date": "2026-07-02"
+    },
+    {
+      "id": "REQ-2026-00117",
+      "wardId": "WARD-02",
+      "ward": "New Town",
+      "category": "Drainage",
+      "language": "bn",
+      "text": "বৃষ্টির পরে স্কুলের কাছে প্রচুর জল জমে যায়।",
+      "severity": "high",
+      "urgency": 10,
+      "affectedPopulation": 12760,
+      "date": "2026-07-18"
+    },
+    {
+      "id": "REQ-2026-00118",
+      "wardId": "WARD-04",
+      "ward": "Kestopur",
+      "category": "Water",
+      "language": "bn",
+      "text": "আমাদের এলাকায় জল সরবরাহ নিয়মিত নয়।",
+      "severity": "high",
+      "urgency": 9,
+      "affectedPopulation": 9197,
+      "date": "2026-06-23"
+    },
+    {
+      "id": "REQ-2026-00119",
+      "wardId": "WARD-02",
+      "ward": "New Town",
+      "category": "Drainage",
+      "language": "bn",
+      "text": "বৃষ্টির পরে স্কুলের কাছে প্রচুর জল জমে যায়।",
+      "severity": "medium",
+      "urgency": 5,
+      "affectedPopulation": 30888,
+      "date": "2026-09-12"
+    },
+    {
+      "id": "REQ-2026-00120",
+      "wardId": "WARD-11",
+      "ward": "Tollygunge",
+      "category": "Waste",
+      "language": "en",
+      "text": "There is an open dumping spot near homes.",
+      "severity": "high",
+      "urgency": 8,
+      "affectedPopulation": 24726,
+      "date": "2026-08-06"
+    },
+    {
+      "id": "REQ-2026-00121",
+      "wardId": "WARD-04",
+      "ward": "Kestopur",
+      "category": "Drainage",
+      "language": "bn",
+      "text": "বৃষ্টির পরে স্কুলের কাছে প্রচুর জল জমে যায়।",
+      "severity": "medium",
+      "urgency": 5,
+      "affectedPopulation": 21993,
+      "date": "2026-09-20"
+    },
+    {
+      "id": "REQ-2026-00122",
+      "wardId": "WARD-12",
+      "ward": "Ballygunge",
+      "category": "Lighting",
+      "language": "en",
+      "text": "The road is dark after sunset.",
+      "severity": "medium",
+      "urgency": 6,
+      "affectedPopulation": 8497,
+      "date": "2026-08-23"
+    },
+    {
+      "id": "REQ-2026-00123",
+      "wardId": "WARD-10",
+      "ward": "Garia",
+      "category": "Roads",
+      "language": "en",
+      "text": "Footpath and road edge are damaged.",
+      "severity": "high",
+      "urgency": 10,
+      "affectedPopulation": 19774,
+      "date": "2026-05-09"
+    },
+    {
+      "id": "REQ-2026-00124",
+      "wardId": "WARD-04",
+      "ward": "Kestopur",
+      "category": "Drainage",
+      "language": "en",
+      "text": "Open drain needs cleaning before the monsoon.",
+      "severity": "medium",
+      "urgency": 7,
+      "affectedPopulation": 30524,
+      "date": "2026-09-09"
+    },
+    {
+      "id": "REQ-2026-00125",
+      "wardId": "WARD-05",
+      "ward": "Lake Town",
+      "category": "Roads",
+      "language": "en",
+      "text": "Large potholes are making the road unsafe.",
+      "severity": "high",
+      "urgency": 8,
+      "affectedPopulation": 31269,
+      "date": "2026-07-07"
+    },
+    {
+      "id": "REQ-2026-00126",
+      "wardId": "WARD-18",
+      "ward": "Shyambazar",
+      "category": "Roads",
+      "language": "en",
+      "text": "Footpath and road edge are damaged.",
+      "severity": "medium",
+      "urgency": 7,
+      "affectedPopulation": 30833,
+      "date": "2026-08-24"
+    },
+    {
+      "id": "REQ-2026-00127",
+      "wardId": "WARD-04",
+      "ward": "Kestopur",
+      "category": "Waste",
+      "language": "bn",
+      "text": "বাজারের পাশে আবর্জনা নিয়মিত পরিষ্কার হয় না।",
+      "severity": "medium",
+      "urgency": 7,
+      "affectedPopulation": 13381,
+      "date": "2026-05-04"
+    },
+    {
+      "id": "REQ-2026-00128",
+      "wardId": "WARD-02",
+      "ward": "New Town",
+      "category": "Public Transport",
+      "language": "en",
+      "text": "The nearest bus stop is overcrowded.",
+      "severity": "medium",
+      "urgency": 5,
+      "affectedPopulation": 32493,
+      "date": "2026-05-23"
+    }
+  ],
+  "infrastructure": [
+    {
+      "wardId": "WARD-01",
+      "roadQuality": 48,
+      "drainageCoverage": 42,
+      "waterAccess": 78,
+      "electricityAccess": 96,
+      "internetAccess": 92,
+      "hospitalDensity": 2.8,
+      "schoolDensity": 5.2,
+      "publicTransportAccess": 88,
+      "provenance": "simulated"
+    },
+    {
+      "wardId": "WARD-02",
+      "roadQuality": 52,
+      "drainageCoverage": 38,
+      "waterAccess": 71,
+      "electricityAccess": 95,
+      "internetAccess": 88,
+      "hospitalDensity": 2.1,
+      "schoolDensity": 4.6,
+      "publicTransportAccess": 81,
+      "provenance": "simulated"
+    },
+    {
+      "wardId": "WARD-03",
+      "roadQuality": 61,
+      "drainageCoverage": 55,
+      "waterAccess": 69,
+      "electricityAccess": 94,
+      "internetAccess": 79,
+      "hospitalDensity": 1.7,
+      "schoolDensity": 4.1,
+      "publicTransportAccess": 77,
+      "provenance": "simulated"
+    },
+    {
+      "wardId": "WARD-04",
+      "roadQuality": 42,
+      "drainageCoverage": 34,
+      "waterAccess": 62,
+      "electricityAccess": 93,
+      "internetAccess": 76,
+      "hospitalDensity": 1.4,
+      "schoolDensity": 3.8,
+      "publicTransportAccess": 74,
+      "provenance": "simulated"
+    },
+    {
+      "wardId": "WARD-05",
+      "roadQuality": 67,
+      "drainageCoverage": 68,
+      "waterAccess": 82,
+      "electricityAccess": 97,
+      "internetAccess": 86,
+      "hospitalDensity": 2.2,
+      "schoolDensity": 4.7,
+      "publicTransportAccess": 83,
+      "provenance": "simulated"
+    },
+    {
+      "wardId": "WARD-06",
+      "roadQuality": 55,
+      "drainageCoverage": 46,
+      "waterAccess": 65,
+      "electricityAccess": 92,
+      "internetAccess": 74,
+      "hospitalDensity": 1.3,
+      "schoolDensity": 3.4,
+      "publicTransportAccess": 68,
+      "provenance": "simulated"
+    },
+    {
+      "wardId": "WARD-07",
+      "roadQuality": 44,
+      "drainageCoverage": 31,
+      "waterAccess": 59,
+      "electricityAccess": 90,
+      "internetAccess": 68,
+      "hospitalDensity": 1.1,
+      "schoolDensity": 4.2,
+      "publicTransportAccess": 59,
+      "provenance": "simulated"
+    },
+    {
+      "wardId": "WARD-08",
+      "roadQuality": 58,
+      "drainageCoverage": 45,
+      "waterAccess": 64,
+      "electricityAccess": 92,
+      "internetAccess": 72,
+      "hospitalDensity": 1.4,
+      "schoolDensity": 4,
+      "publicTransportAccess": 64,
+      "provenance": "simulated"
+    },
+    {
+      "wardId": "WARD-09",
+      "roadQuality": 63,
+      "drainageCoverage": 57,
+      "waterAccess": 74,
+      "electricityAccess": 95,
+      "internetAccess": 82,
+      "hospitalDensity": 2,
+      "schoolDensity": 5,
+      "publicTransportAccess": 82,
+      "provenance": "simulated"
+    },
+    {
+      "wardId": "WARD-10",
+      "roadQuality": 46,
+      "drainageCoverage": 29,
+      "waterAccess": 58,
+      "electricityAccess": 89,
+      "internetAccess": 69,
+      "hospitalDensity": 1.2,
+      "schoolDensity": 4.5,
+      "publicTransportAccess": 71,
+      "provenance": "simulated"
+    },
+    {
+      "wardId": "WARD-11",
+      "roadQuality": 71,
+      "drainageCoverage": 64,
+      "waterAccess": 86,
+      "electricityAccess": 98,
+      "internetAccess": 91,
+      "hospitalDensity": 2.3,
+      "schoolDensity": 4.8,
+      "publicTransportAccess": 89,
+      "provenance": "simulated"
+    },
+    {
+      "wardId": "WARD-12",
+      "roadQuality": 78,
+      "drainageCoverage": 73,
+      "waterAccess": 91,
+      "electricityAccess": 99,
+      "internetAccess": 95,
+      "hospitalDensity": 3.1,
+      "schoolDensity": 4.1,
+      "publicTransportAccess": 91,
+      "provenance": "simulated"
+    },
+    {
+      "wardId": "WARD-13",
+      "roadQuality": 39,
+      "drainageCoverage": 35,
+      "waterAccess": 72,
+      "electricityAccess": 94,
+      "internetAccess": 84,
+      "hospitalDensity": 2.4,
+      "schoolDensity": 5.4,
+      "publicTransportAccess": 86,
+      "provenance": "simulated"
+    },
+    {
+      "wardId": "WARD-14",
+      "roadQuality": 51,
+      "drainageCoverage": 41,
+      "waterAccess": 61,
+      "electricityAccess": 91,
+      "internetAccess": 77,
+      "hospitalDensity": 1.8,
+      "schoolDensity": 4.6,
+      "publicTransportAccess": 78,
+      "provenance": "simulated"
+    },
+    {
+      "wardId": "WARD-15",
+      "roadQuality": 47,
+      "drainageCoverage": 37,
+      "waterAccess": 66,
+      "electricityAccess": 93,
+      "internetAccess": 80,
+      "hospitalDensity": 2.1,
+      "schoolDensity": 5.1,
+      "publicTransportAccess": 83,
+      "provenance": "simulated"
+    },
+    {
+      "wardId": "WARD-16",
+      "roadQuality": 36,
+      "drainageCoverage": 28,
+      "waterAccess": 54,
+      "electricityAccess": 88,
+      "internetAccess": 61,
+      "hospitalDensity": 1,
+      "schoolDensity": 4.8,
+      "publicTransportAccess": 55,
+      "provenance": "simulated"
+    },
+    {
+      "wardId": "WARD-17",
+      "roadQuality": 74,
+      "drainageCoverage": 76,
+      "waterAccess": 94,
+      "electricityAccess": 99,
+      "internetAccess": 96,
+      "hospitalDensity": 3.4,
+      "schoolDensity": 3.2,
+      "publicTransportAccess": 76,
+      "provenance": "simulated"
+    },
+    {
+      "wardId": "WARD-18",
+      "roadQuality": 57,
+      "drainageCoverage": 52,
+      "waterAccess": 76,
+      "electricityAccess": 96,
+      "internetAccess": 85,
+      "hospitalDensity": 2,
+      "schoolDensity": 4.7,
+      "publicTransportAccess": 85,
+      "provenance": "simulated"
+    },
+    {
+      "wardId": "WARD-19",
+      "roadQuality": 41,
+      "drainageCoverage": 33,
+      "waterAccess": 63,
+      "electricityAccess": 90,
+      "internetAccess": 70,
+      "hospitalDensity": 1.3,
+      "schoolDensity": 4.3,
+      "publicTransportAccess": 72,
+      "provenance": "simulated"
+    },
+    {
+      "wardId": "WARD-20",
+      "roadQuality": 49,
+      "drainageCoverage": 39,
+      "waterAccess": 68,
+      "electricityAccess": 92,
+      "internetAccess": 75,
+      "hospitalDensity": 1.6,
+      "schoolDensity": 4.5,
+      "publicTransportAccess": 79,
+      "provenance": "simulated"
+    }
+  ],
+  "investments": [
+    {
+      "wardId": "WARD-01",
+      "sector": "Drainage",
+      "allocatedBudget": 3740000,
+      "activeProjects": 1,
+      "completionPercentage": 34,
+      "provenance": "simulated"
+    },
+    {
+      "wardId": "WARD-01",
+      "sector": "Roads",
+      "allocatedBudget": 4620000,
+      "activeProjects": 2,
+      "completionPercentage": 42,
+      "provenance": "simulated"
+    },
+    {
+      "wardId": "WARD-02",
+      "sector": "Drainage",
+      "allocatedBudget": 2744000,
+      "activeProjects": 2,
+      "completionPercentage": 41,
+      "provenance": "simulated"
+    },
+    {
+      "wardId": "WARD-02",
+      "sector": "Roads",
+      "allocatedBudget": 4116000,
+      "activeProjects": 3,
+      "completionPercentage": 47,
+      "provenance": "simulated"
+    },
+    {
+      "wardId": "WARD-03",
+      "sector": "Drainage",
+      "allocatedBudget": 1800000,
+      "activeProjects": 3,
+      "completionPercentage": 48,
+      "provenance": "simulated"
+    },
+    {
+      "wardId": "WARD-03",
+      "sector": "Roads",
+      "allocatedBudget": 3024000,
+      "activeProjects": 1,
+      "completionPercentage": 52,
+      "provenance": "simulated"
+    },
+    {
+      "wardId": "WARD-04",
+      "sector": "Drainage",
+      "allocatedBudget": 1518000,
+      "activeProjects": 1,
+      "completionPercentage": 55,
+      "provenance": "simulated"
+    },
+    {
+      "wardId": "WARD-04",
+      "sector": "Roads",
+      "allocatedBudget": 2898000,
+      "activeProjects": 2,
+      "completionPercentage": 57,
+      "provenance": "simulated"
+    },
+    {
+      "wardId": "WARD-05",
+      "sector": "Drainage",
+      "allocatedBudget": 2356000,
+      "activeProjects": 2,
+      "completionPercentage": 62,
+      "provenance": "simulated"
+    },
+    {
+      "wardId": "WARD-05",
+      "sector": "Roads",
+      "allocatedBudget": 3192000,
+      "activeProjects": 3,
+      "completionPercentage": 62,
+      "provenance": "simulated"
+    },
+    {
+      "wardId": "WARD-06",
+      "sector": "Drainage",
+      "allocatedBudget": 1560000,
+      "activeProjects": 3,
+      "completionPercentage": 69,
+      "provenance": "simulated"
+    },
+    {
+      "wardId": "WARD-06",
+      "sector": "Roads",
+      "allocatedBudget": 2730000,
+      "activeProjects": 1,
+      "completionPercentage": 67,
+      "provenance": "simulated"
+    },
+    {
+      "wardId": "WARD-07",
+      "sector": "Drainage",
+      "allocatedBudget": 1116000,
+      "activeProjects": 1,
+      "completionPercentage": 34,
+      "provenance": "simulated"
+    },
+    {
+      "wardId": "WARD-07",
+      "sector": "Roads",
+      "allocatedBudget": 2604000,
+      "activeProjects": 2,
+      "completionPercentage": 72,
+      "provenance": "simulated"
+    },
+    {
+      "wardId": "WARD-08",
+      "sector": "Drainage",
+      "allocatedBudget": 1610000,
+      "activeProjects": 2,
+      "completionPercentage": 41,
+      "provenance": "simulated"
+    },
+    {
+      "wardId": "WARD-08",
+      "sector": "Roads",
+      "allocatedBudget": 2940000,
+      "activeProjects": 3,
+      "completionPercentage": 42,
+      "provenance": "simulated"
+    },
+    {
+      "wardId": "WARD-09",
+      "sector": "Drainage",
+      "allocatedBudget": 2436000,
+      "activeProjects": 3,
+      "completionPercentage": 48,
+      "provenance": "simulated"
+    },
+    {
+      "wardId": "WARD-09",
+      "sector": "Roads",
+      "allocatedBudget": 3528000,
+      "activeProjects": 1,
+      "completionPercentage": 47,
+      "provenance": "simulated"
+    },
+    {
+      "wardId": "WARD-10",
+      "sector": "Drainage",
+      "allocatedBudget": 1003000,
+      "activeProjects": 1,
+      "completionPercentage": 55,
+      "provenance": "simulated"
+    },
+    {
+      "wardId": "WARD-10",
+      "sector": "Roads",
+      "allocatedBudget": 2478000,
+      "activeProjects": 2,
+      "completionPercentage": 52,
+      "provenance": "simulated"
+    },
+    {
+      "wardId": "WARD-11",
+      "sector": "Drainage",
+      "allocatedBudget": 2808000,
+      "activeProjects": 2,
+      "completionPercentage": 62,
+      "provenance": "simulated"
+    },
+    {
+      "wardId": "WARD-11",
+      "sector": "Roads",
+      "allocatedBudget": 3276000,
+      "activeProjects": 3,
+      "completionPercentage": 57,
+      "provenance": "simulated"
+    },
+    {
+      "wardId": "WARD-12",
+      "sector": "Drainage",
+      "allocatedBudget": 3772000,
+      "activeProjects": 3,
+      "completionPercentage": 69,
+      "provenance": "simulated"
+    },
+    {
+      "wardId": "WARD-12",
+      "sector": "Roads",
+      "allocatedBudget": 3864000,
+      "activeProjects": 1,
+      "completionPercentage": 62,
+      "provenance": "simulated"
+    },
+    {
+      "wardId": "WARD-13",
+      "sector": "Drainage",
+      "allocatedBudget": 1407000,
+      "activeProjects": 1,
+      "completionPercentage": 34,
+      "provenance": "simulated"
+    },
+    {
+      "wardId": "WARD-13",
+      "sector": "Roads",
+      "allocatedBudget": 2814000,
+      "activeProjects": 2,
+      "completionPercentage": 67,
+      "provenance": "simulated"
+    },
+    {
+      "wardId": "WARD-14",
+      "sector": "Drainage",
+      "allocatedBudget": 1525000,
+      "activeProjects": 2,
+      "completionPercentage": 41,
+      "provenance": "simulated"
+    },
+    {
+      "wardId": "WARD-14",
+      "sector": "Roads",
+      "allocatedBudget": 2562000,
+      "activeProjects": 3,
+      "completionPercentage": 72,
+      "provenance": "simulated"
+    },
+    {
+      "wardId": "WARD-15",
+      "sector": "Drainage",
+      "allocatedBudget": 1536000,
+      "activeProjects": 3,
+      "completionPercentage": 48,
+      "provenance": "simulated"
+    },
+    {
+      "wardId": "WARD-15",
+      "sector": "Roads",
+      "allocatedBudget": 2688000,
+      "activeProjects": 1,
+      "completionPercentage": 42,
+      "provenance": "simulated"
+    },
+    {
+      "wardId": "WARD-16",
+      "sector": "Drainage",
+      "allocatedBudget": 864000,
+      "activeProjects": 1,
+      "completionPercentage": 55,
+      "provenance": "simulated"
+    },
+    {
+      "wardId": "WARD-16",
+      "sector": "Roads",
+      "allocatedBudget": 2268000,
+      "activeProjects": 2,
+      "completionPercentage": 47,
+      "provenance": "simulated"
+    },
+    {
+      "wardId": "WARD-17",
+      "sector": "Drainage",
+      "allocatedBudget": 3870000,
+      "activeProjects": 2,
+      "completionPercentage": 62,
+      "provenance": "simulated"
+    },
+    {
+      "wardId": "WARD-17",
+      "sector": "Roads",
+      "allocatedBudget": 3780000,
+      "activeProjects": 3,
+      "completionPercentage": 52,
+      "provenance": "simulated"
+    },
+    {
+      "wardId": "WARD-18",
+      "sector": "Drainage",
+      "allocatedBudget": 2250000,
+      "activeProjects": 3,
+      "completionPercentage": 69,
+      "provenance": "simulated"
+    },
+    {
+      "wardId": "WARD-18",
+      "sector": "Roads",
+      "allocatedBudget": 3150000,
+      "activeProjects": 1,
+      "completionPercentage": 57,
+      "provenance": "simulated"
+    },
+    {
+      "wardId": "WARD-19",
+      "sector": "Drainage",
+      "allocatedBudget": 1200000,
+      "activeProjects": 1,
+      "completionPercentage": 34,
+      "provenance": "simulated"
+    },
+    {
+      "wardId": "WARD-19",
+      "sector": "Roads",
+      "allocatedBudget": 2520000,
+      "activeProjects": 2,
+      "completionPercentage": 62,
+      "provenance": "simulated"
+    },
+    {
+      "wardId": "WARD-20",
+      "sector": "Drainage",
+      "allocatedBudget": 1496000,
+      "activeProjects": 2,
+      "completionPercentage": 41,
+      "provenance": "simulated"
+    },
+    {
+      "wardId": "WARD-20",
+      "sector": "Roads",
+      "allocatedBudget": 2856000,
+      "activeProjects": 3,
+      "completionPercentage": 67,
+      "provenance": "simulated"
+    }
+  ],
+  "clusters": [
+    {
+      "id": "CL-204",
+      "wardId": "WARD-12",
+      "label": "Central drainage & mobility pressure",
+      "requestCount": 19,
+      "categories": [
+        "Drainage",
+        "Roads"
+      ],
+      "severityScore": 86,
+      "confidence": 0.91
+    },
+    {
+      "id": "CL-118",
+      "wardId": "WARD-01",
+      "label": "Water reliability cluster",
+      "requestCount": 17,
+      "categories": [
+        "Water",
+        "Drainage"
+      ],
+      "severityScore": 82,
+      "confidence": 0.89
+    },
+    {
+      "id": "CL-331",
+      "wardId": "WARD-02",
+      "label": "Road & transit access cluster",
+      "requestCount": 15,
+      "categories": [
+        "Roads",
+        "Public Transport"
+      ],
+      "severityScore": 77,
+      "confidence": 0.87
+    },
+    {
+      "id": "CL-287",
+      "wardId": "WARD-07",
+      "label": "Drainage and waste pressure",
+      "requestCount": 14,
+      "categories": [
+        "Drainage",
+        "Waste"
+      ],
+      "severityScore": 79,
+      "confidence": 0.86
+    },
+    {
+      "id": "CL-406",
+      "wardId": "WARD-10",
+      "label": "Water access & road condition",
+      "requestCount": 13,
+      "categories": [
+        "Water",
+        "Roads"
+      ],
+      "severityScore": 76,
+      "confidence": 0.84
+    }
+  ],
+  "projects": [
+    {
+      "wardId": "WARD-04",
+      "wardName": "Kestopur",
+      "title": "Road resurfacing & pedestrian safety",
+      "category": "Roads",
+      "score": 76,
+      "demand": 93,
+      "severity": 70,
+      "populationImpact": 100,
+      "infrastructureGap": 54,
+      "vulnerability": 25,
+      "investmentGap": 86,
+      "affectedPopulation": 346643,
+      "evidence": [
+        "14 citizen reports across 5 issue categories",
+        "Roads demand is concentrated in this ward",
+        "Infrastructure indicators show a moderate gap",
+        "Simulated investment coverage is 14/100"
+      ],
+      "confidence": 0.86,
+      "limitations": "Analytical prototype using simulated demographic, infrastructure and investment data."
+    },
+    {
+      "wardId": "WARD-02",
+      "wardName": "New Town",
+      "title": "Drainage rehabilitation + road improvement",
+      "category": "Drainage",
+      "score": 74,
+      "demand": 96,
+      "severity": 71,
+      "populationImpact": 100,
+      "infrastructureGap": 46,
+      "vulnerability": 16,
+      "investmentGap": 75,
+      "affectedPopulation": 373703,
+      "evidence": [
+        "15 citizen reports across 4 issue categories",
+        "Drainage demand is concentrated in this ward",
+        "Infrastructure indicators show a moderate gap",
+        "Simulated investment coverage is 25/100"
+      ],
+      "confidence": 0.87,
+      "limitations": "Analytical prototype using simulated demographic, infrastructure and investment data."
+    },
+    {
+      "wardId": "WARD-07",
+      "wardName": "Behala East",
+      "title": "Drainage rehabilitation + road improvement",
+      "category": "Drainage",
+      "score": 74,
+      "demand": 72,
+      "severity": 83,
+      "populationImpact": 100,
+      "infrastructureGap": 55,
+      "vulnerability": 37,
+      "investmentGap": 90,
+      "affectedPopulation": 255584,
+      "evidence": [
+        "8 citizen reports across 3 issue categories",
+        "Drainage demand is concentrated in this ward",
+        "Infrastructure indicators show a material gap",
+        "Simulated investment coverage is 10/100"
+      ],
+      "confidence": 0.7999999999999999,
+      "limitations": "Analytical prototype using simulated demographic, infrastructure and investment data."
+    },
+    {
+      "wardId": "WARD-10",
+      "wardName": "Garia",
+      "title": "Road resurfacing & pedestrian safety",
+      "category": "Roads",
+      "score": 73,
+      "demand": 72,
+      "severity": 80,
+      "populationImpact": 100,
+      "infrastructureGap": 56,
+      "vulnerability": 30,
+      "investmentGap": 91,
+      "affectedPopulation": 234371,
+      "evidence": [
+        "8 citizen reports across 5 issue categories",
+        "Roads demand is concentrated in this ward",
+        "Infrastructure indicators show a material gap",
+        "Simulated investment coverage is 9/100"
+      ],
+      "confidence": 0.7999999999999999,
+      "limitations": "Analytical prototype using simulated demographic, infrastructure and investment data."
+    },
+    {
+      "wardId": "WARD-01",
+      "wardName": "Salt Lake",
+      "title": "Drainage rehabilitation + road improvement",
+      "category": "Drainage",
+      "score": 69,
+      "demand": 86,
+      "severity": 71,
+      "populationImpact": 100,
+      "infrastructureGap": 44,
+      "vulnerability": 10,
+      "investmentGap": 66,
+      "affectedPopulation": 266919,
+      "evidence": [
+        "12 citizen reports across 5 issue categories",
+        "Drainage demand is concentrated in this ward",
+        "Infrastructure indicators show a moderate gap",
+        "Simulated investment coverage is 34/100"
+      ],
+      "confidence": 0.84,
+      "limitations": "Analytical prototype using simulated demographic, infrastructure and investment data."
+    },
+    {
+      "wardId": "WARD-16",
+      "wardName": "Garden Reach",
+      "title": "Drainage rehabilitation + road improvement",
+      "category": "Drainage",
+      "score": 69,
+      "demand": 65,
+      "severity": 57,
+      "populationImpact": 100,
+      "infrastructureGap": 61,
+      "vulnerability": 42,
+      "investmentGap": 92,
+      "affectedPopulation": 139149,
+      "evidence": [
+        "6 citizen reports across 3 issue categories",
+        "Drainage demand is concentrated in this ward",
+        "Infrastructure indicators show a material gap",
+        "Simulated investment coverage is 8/100"
+      ],
+      "confidence": 0.78,
+      "limitations": "Analytical prototype using simulated demographic, infrastructure and investment data."
+    },
+    {
+      "wardId": "WARD-13",
+      "wardName": "Park Circus",
+      "title": "Water reliability & pipeline upgrades",
+      "category": "Water",
+      "score": 68,
+      "demand": 65,
+      "severity": 76,
+      "populationImpact": 100,
+      "infrastructureGap": 51,
+      "vulnerability": 15,
+      "investmentGap": 87,
+      "affectedPopulation": 172445,
+      "evidence": [
+        "6 citizen reports across 5 issue categories",
+        "Water demand is concentrated in this ward",
+        "Infrastructure indicators show a moderate gap",
+        "Simulated investment coverage is 13/100"
+      ],
+      "confidence": 0.78,
+      "limitations": "Analytical prototype using simulated demographic, infrastructure and investment data."
+    },
+    {
+      "wardId": "WARD-08",
+      "wardName": "Behala West",
+      "title": "Road resurfacing & pedestrian safety",
+      "category": "Roads",
+      "score": 67,
+      "demand": 59,
+      "severity": 83,
+      "populationImpact": 100,
+      "infrastructureGap": 44,
+      "vulnerability": 32,
+      "investmentGap": 85,
+      "affectedPopulation": 98754,
+      "evidence": [
+        "4 citizen reports across 3 issue categories",
+        "Roads demand is concentrated in this ward",
+        "Infrastructure indicators show a moderate gap",
+        "Simulated investment coverage is 15/100"
+      ],
+      "confidence": 0.76,
+      "limitations": "Analytical prototype using simulated demographic, infrastructure and investment data."
+    },
+    {
+      "wardId": "WARD-18",
+      "wardName": "Shyambazar",
+      "title": "Public Transport service improvement",
+      "category": "Public Transport",
+      "score": 66,
+      "demand": 62,
+      "severity": 84,
+      "populationImpact": 100,
+      "infrastructureGap": 38,
+      "vulnerability": 15,
+      "investmentGap": 80,
+      "affectedPopulation": 114163,
+      "evidence": [
+        "5 citizen reports across 4 issue categories",
+        "Public Transport demand is concentrated in this ward",
+        "Infrastructure indicators show a moderate gap",
+        "Simulated investment coverage is 20/100"
+      ],
+      "confidence": 0.77,
+      "limitations": "Analytical prototype using simulated demographic, infrastructure and investment data."
+    },
+    {
+      "wardId": "WARD-06",
+      "wardName": "Rajarhat",
+      "title": "Waste service improvement",
+      "category": "Waste",
+      "score": 65,
+      "demand": 59,
+      "severity": 69,
+      "populationImpact": 100,
+      "infrastructureGap": 45,
+      "vulnerability": 29,
+      "investmentGap": 86,
+      "affectedPopulation": 96634,
+      "evidence": [
+        "4 citizen reports across 3 issue categories",
+        "Waste demand is concentrated in this ward",
+        "Infrastructure indicators show a moderate gap",
+        "Simulated investment coverage is 14/100"
+      ],
+      "confidence": 0.76,
+      "limitations": "Analytical prototype using simulated demographic, infrastructure and investment data."
+    },
+    {
+      "wardId": "WARD-09",
+      "wardName": "Jadavpur",
+      "title": "Drainage rehabilitation + road improvement",
+      "category": "Drainage",
+      "score": 65,
+      "demand": 65,
+      "severity": 76,
+      "populationImpact": 100,
+      "infrastructureGap": 35,
+      "vulnerability": 18,
+      "investmentGap": 78,
+      "affectedPopulation": 119462,
+      "evidence": [
+        "6 citizen reports across 4 issue categories",
+        "Drainage demand is concentrated in this ward",
+        "Infrastructure indicators show a moderate gap",
+        "Simulated investment coverage is 22/100"
+      ],
+      "confidence": 0.78,
+      "limitations": "Analytical prototype using simulated demographic, infrastructure and investment data."
+    },
+    {
+      "wardId": "WARD-14",
+      "wardName": "Topsia",
+      "title": "Public Transport service improvement",
+      "category": "Public Transport",
+      "score": 65,
+      "demand": 62,
+      "severity": 68,
+      "populationImpact": 100,
+      "infrastructureGap": 49,
+      "vulnerability": 23,
+      "investmentGap": 86,
+      "affectedPopulation": 91317,
+      "evidence": [
+        "5 citizen reports across 4 issue categories",
+        "Public Transport demand is concentrated in this ward",
+        "Infrastructure indicators show a moderate gap",
+        "Simulated investment coverage is 14/100"
+      ],
+      "confidence": 0.77,
+      "limitations": "Analytical prototype using simulated demographic, infrastructure and investment data."
+    },
+    {
+      "wardId": "WARD-20",
+      "wardName": "Tangra",
+      "title": "Lighting service improvement",
+      "category": "Lighting",
+      "score": 64,
+      "demand": 55,
+      "severity": 71,
+      "populationImpact": 100,
+      "infrastructureGap": 48,
+      "vulnerability": 23,
+      "investmentGap": 86,
+      "affectedPopulation": 72740,
+      "evidence": [
+        "3 citizen reports across 2 issue categories",
+        "Lighting demand is concentrated in this ward",
+        "Infrastructure indicators show a moderate gap",
+        "Simulated investment coverage is 14/100"
+      ],
+      "confidence": 0.75,
+      "limitations": "Analytical prototype using simulated demographic, infrastructure and investment data."
+    },
+    {
+      "wardId": "WARD-05",
+      "wardName": "Lake Town",
+      "title": "Drainage rehabilitation + road improvement",
+      "category": "Drainage",
+      "score": 63,
+      "demand": 69,
+      "severity": 70,
+      "populationImpact": 100,
+      "infrastructureGap": 28,
+      "vulnerability": 16,
+      "investmentGap": 79,
+      "affectedPopulation": 136627,
+      "evidence": [
+        "7 citizen reports across 3 issue categories",
+        "Drainage demand is concentrated in this ward",
+        "Infrastructure indicators show a moderate gap",
+        "Simulated investment coverage is 21/100"
+      ],
+      "confidence": 0.79,
+      "limitations": "Analytical prototype using simulated demographic, infrastructure and investment data."
+    },
+    {
+      "wardId": "WARD-03",
+      "wardName": "Dum Dum",
+      "title": "Drainage rehabilitation + road improvement",
+      "category": "Drainage",
+      "score": 60,
+      "demand": 59,
+      "severity": 55,
+      "populationImpact": 100,
+      "infrastructureGap": 38,
+      "vulnerability": 22,
+      "investmentGap": 84,
+      "affectedPopulation": 75595,
+      "evidence": [
+        "4 citizen reports across 3 issue categories",
+        "Drainage demand is concentrated in this ward",
+        "Infrastructure indicators show a moderate gap",
+        "Simulated investment coverage is 16/100"
+      ],
+      "confidence": 0.76,
+      "limitations": "Analytical prototype using simulated demographic, infrastructure and investment data."
+    },
+    {
+      "wardId": "WARD-12",
+      "wardName": "Ballygunge",
+      "title": "Drainage rehabilitation + road improvement",
+      "category": "Drainage",
+      "score": 60,
+      "demand": 65,
+      "severity": 76,
+      "populationImpact": 100,
+      "infrastructureGap": 19,
+      "vulnerability": 7,
+      "investmentGap": 66,
+      "affectedPopulation": 107631,
+      "evidence": [
+        "6 citizen reports across 4 issue categories",
+        "Drainage demand is concentrated in this ward",
+        "Infrastructure indicators show a moderate gap",
+        "Simulated investment coverage is 34/100"
+      ],
+      "confidence": 0.78,
+      "limitations": "Analytical prototype using simulated demographic, infrastructure and investment data."
+    },
+    {
+      "wardId": "WARD-15",
+      "wardName": "Entally",
+      "title": "Waste service improvement",
+      "category": "Waste",
+      "score": 60,
+      "demand": 55,
+      "severity": 53,
+      "populationImpact": 100,
+      "infrastructureGap": 50,
+      "vulnerability": 19,
+      "investmentGap": 86,
+      "affectedPopulation": 88905,
+      "evidence": [
+        "3 citizen reports across 3 issue categories",
+        "Waste demand is concentrated in this ward",
+        "Infrastructure indicators show a moderate gap",
+        "Simulated investment coverage is 14/100"
+      ],
+      "confidence": 0.75,
+      "limitations": "Analytical prototype using simulated demographic, infrastructure and investment data."
+    },
+    {
+      "wardId": "WARD-17",
+      "wardName": "Alipore",
+      "title": "Lighting service improvement",
+      "category": "Lighting",
+      "score": 60,
+      "demand": 69,
+      "severity": 70,
+      "populationImpact": 100,
+      "infrastructureGap": 19,
+      "vulnerability": 14,
+      "investmentGap": 65,
+      "affectedPopulation": 113365,
+      "evidence": [
+        "7 citizen reports across 4 issue categories",
+        "Lighting demand is concentrated in this ward",
+        "Infrastructure indicators show a moderate gap",
+        "Simulated investment coverage is 35/100"
+      ],
+      "confidence": 0.79,
+      "limitations": "Analytical prototype using simulated demographic, infrastructure and investment data."
+    },
+    {
+      "wardId": "WARD-19",
+      "wardName": "Belgachia",
+      "title": "Lighting service improvement",
+      "category": "Lighting",
+      "score": 60,
+      "demand": 52,
+      "severity": 48,
+      "populationImpact": 100,
+      "infrastructureGap": 54,
+      "vulnerability": 29,
+      "investmentGap": 89,
+      "affectedPopulation": 55667,
+      "evidence": [
+        "2 citizen reports across 2 issue categories",
+        "Lighting demand is concentrated in this ward",
+        "Infrastructure indicators show a moderate gap",
+        "Simulated investment coverage is 11/100"
+      ],
+      "confidence": 0.74,
+      "limitations": "Analytical prototype using simulated demographic, infrastructure and investment data."
+    },
+    {
+      "wardId": "WARD-11",
+      "wardName": "Tollygunge",
+      "title": "Lighting service improvement",
+      "category": "Lighting",
+      "score": 58,
+      "demand": 55,
+      "severity": 81,
+      "populationImpact": 88,
+      "infrastructureGap": 26,
+      "vulnerability": 10,
+      "investmentGap": 74,
+      "affectedPopulation": 49183,
+      "evidence": [
+        "3 citizen reports across 3 issue categories",
+        "Lighting demand is concentrated in this ward",
+        "Infrastructure indicators show a moderate gap",
+        "Simulated investment coverage is 26/100"
+      ],
+      "confidence": 0.75,
+      "limitations": "Analytical prototype using simulated demographic, infrastructure and investment data."
+    }
+  ],
+  "trends": [
+    {
+      "month": "Apr",
+      "requests": 62,
+      "demand": 54,
+      "investment": 49
+    },
+    {
+      "month": "May",
+      "requests": 71,
+      "demand": 61,
+      "investment": 51
+    },
+    {
+      "month": "Jun",
+      "requests": 83,
+      "demand": 68,
+      "investment": 55
+    },
+    {
+      "month": "Jul",
+      "requests": 91,
+      "demand": 73,
+      "investment": 57
+    },
+    {
+      "month": "Aug",
+      "requests": 108,
+      "demand": 81,
+      "investment": 60
+    },
+    {
+      "month": "Sep",
+      "requests": 128,
+      "demand": 88,
+      "investment": 63
+    }
+  ]
+}
