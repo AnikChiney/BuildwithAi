@@ -1,6 +1,7 @@
 import React from 'react';
 import { NavLink, Link } from 'react-router-dom';
 import { Radio, BarChart3, FileText, RotateCcw } from 'lucide-react';
+import { ProfileMenu } from './ProfileMenu';
 import { api } from '../../services/api';
 import { useToast } from '../../context/ToastContext';
 import { useA11y } from '../../context/A11yContext';
@@ -139,6 +140,8 @@ export const Header: React.FC = () => {
             <RotateCcw className="w-3.5 h-3.5" />
             <span className="hidden sm:inline">Reset Demo</span>
           </button>
+
+          <ProfileMenu />
         </div>
       </header>
     </>
