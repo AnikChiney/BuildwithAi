@@ -1,12 +1,13 @@
 import React,{useState} from 'react';
 import { useNavigate } from 'react-router-dom';
-import { ArrowLeft, CheckCircle2, Languages, MapPin, Mic, Send, Sparkles, LogOut } from 'lucide-react';
+import { ArrowLeft, CheckCircle2, Languages, MapPin, Mic, Send, Sparkles } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { analyseCitizenRequest, transcribeVoiceRequest } from '../services/ai';
 import { reportsApi, SubmittedReport } from '../services/reportsApi';
 import { AnalysisResult, CivicLanguage, CivicSeverity } from '../types/civic';
 import { VoiceRecorder } from '../components/request/VoiceRecorder';
 import { MediaUpload, SelectedMedia } from '../components/request/MediaUpload';
+import { ProfileMenu } from '../components/common/ProfileMenu';
 import { useAuth } from '../context/AuthContext';
 
 const labels:Record<CivicLanguage,string>={en:'English',bn:'বাংলা',hi:'हिन्दी'};
@@ -49,7 +50,7 @@ function reportToAnalysisResult(report:SubmittedReport, ward:WardMeta, fallbackL
 const isRealMode = (import.meta.env.VITE_AI_MODE || 'demo') === 'real';
 
 export const CitizenRequestPage:React.FC=()=>{
- const nav=useNavigate(); const {user,loading:authLoading,logout}=useAuth();
+ const nav=useNavigate(); const {user,loading:authLoading}=useAuth();
  const [lang,setLang]=useState<CivicLanguage>('bn'); const [text,setText]=useState(examples.bn); const [mode,setMode]=useState<'text'|'voice'>('text'); const [wardId,setWardId]=useState('WARD-12'); const [busy,setBusy]=useState(false); const [error,setError]=useState('');
  const [transcribing,setTranscribing]=useState(false); const [hasVoiceTranscript,setHasVoiceTranscript]=useState(false); const [voiceBlob,setVoiceBlob]=useState<Blob|null>(null); const [mediaFiles,setMediaFiles]=useState<SelectedMedia[]>([]);
 
@@ -113,10 +114,7 @@ export const CitizenRequestPage:React.FC=()=>{
    <Link to="/" className="brand"><span className="brand-mark">CS</span><span><strong>CivicSignal AI</strong><small>Citizen Portal</small></span></Link>
    <div className="demo-chip">{isRealMode?'LIVE BACKEND':'DEMO ENVIRONMENT'}</div>
    <div style={{display:'flex',alignItems:'center',gap:14}}>
-    {isRealMode&&!authLoading&&(user
-      ? <span className="text-link" style={{display:'flex',alignItems:'center',gap:6}}>{user.name}<button type="button" onClick={()=>logout()} title="Sign out" style={{display:'inline-flex',alignItems:'center'}}><LogOut size={13}/></button></span>
-      : <Link to={`/login?next=/submit`} className="text-link">Sign in</Link>
-    )}
+    {isRealMode&&!authLoading && <ProfileMenu />}
     <Link to="/government" className="text-link">Government Command Center →</Link>
    </div>
   </header>
