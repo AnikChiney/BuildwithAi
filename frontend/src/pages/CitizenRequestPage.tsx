@@ -56,7 +56,10 @@ export const CitizenRequestPage:React.FC=()=>{
     setError(mode==='voice'?'Please record your request first.':'Please describe the development need.');
     return;
   }
-  if(isRealMode&&!user){setError('Please sign in to submit to the live system.');return;}
+  if (!user) {
+  nav('/login?next=/submit');
+  return;
+}
   setBusy(true);setError('');
   try{
     const ward=wards.find(w=>w.id===wardId) || wards[0];
