@@ -46,7 +46,7 @@ export const LoginPage: React.FC = () => {
       </header>
       <main className="citizen-shell" style={{ maxWidth: 440 }}>
         <div className="back-row">
-          <Link to="/submit" className="back-link"><ArrowLeft size={15} /> Back to request form</Link>
+          <Link to="/" className="back-link"><ArrowLeft size={15} /> Back to request form</Link>
         </div>
         <section className="intake-card">
           <div className="card-top">

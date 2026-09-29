@@ -1,8 +1,8 @@
 require("dotenv").config();
 
-const connectDatabase = require("./src/config/database");
-const CivicDataset = require("./src/models/civicDataset_model");
-const dataset = require("./src/seed/civicDataset.json");
+const connectDatabase = require("../src/config/database");
+const CivicDataset = require("../src/models/civicDataset_model");
+const dataset = require("../src/seed/civicDataset.json");
 
 const seed = async () => {
     await connectDatabase();

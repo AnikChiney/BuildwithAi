@@ -100,8 +100,6 @@ const mediaUpload = multer({
     },
 });
 
-router.use(requireAuth);
-
 router.post(
     "/reports/:id/media",
     mediaUpload.array("media", 5),

@@ -69,13 +69,15 @@ async function loadDataset() {
   notify();
 
   try {
-    const response = await fetch(`${BACKEND_API_URL}/api/dataset`);
+    const response = await fetch(`${BACKEND_API_URL}/api/dataset`, {
+      credentials: 'include',
+    });
     const body = await response.json().catch(() => null);
 
     if (!response.ok || !body?.dataset) {
       throw new Error(
         body?.message ||
-          'Could not load the MongoDB civic dataset. Make sure the backend is running and the dataset is seeded.'
+        'Could not load the MongoDB civic dataset. Make sure the backend is running and the dataset is seeded.'
       );
     }
 
