@@ -13,17 +13,43 @@ async function parseJson(res: Response) {
   return res.json().catch(() => null);
 }
 
+let meInFlight: Promise<AuthUser | null> | null = null;
+
+async function fetchMe(): Promise<AuthUser | null> {
+  const res = await fetch(`${BACKEND_API_URL}/api/auth/me`, {
+    credentials: 'include',
+  });
+
+  // 401 means the user is simply not logged in.
+  if (res.status === 401) return null;
+
+  const data = await parseJson(res);
+
+  if (!res.ok) return null;
+
+  return data?.user ?? null;
+}
+
 export const authApi = {
   // POST /api/auth/register
-  async register(name: string, email: string, password: string): Promise<AuthUser> {
+  async register(
+    name: string,
+    email: string,
+    password: string
+  ): Promise<AuthUser> {
     const res = await fetch(`${BACKEND_API_URL}/api/auth/register`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       credentials: 'include',
       body: JSON.stringify({ name, email, password }),
     });
+
     const data = await parseJson(res);
-    if (!res.ok) throw new Error(data?.message || 'Registration failed');
+
+    if (!res.ok) {
+      throw new Error(data?.message || 'Registration failed');
+    }
+
     return data.user;
   },
 
@@ -35,20 +61,25 @@ export const authApi = {
       credentials: 'include',
       body: JSON.stringify({ email, password }),
     });
+
     const data = await parseJson(res);
-    if (!res.ok) throw new Error(data?.message || 'Invalid email or password');
+
+    if (!res.ok) {
+      throw new Error(data?.message || 'Invalid email or password');
+    }
+
     return data.user;
   },
 
   // GET /api/auth/me
-  async me(): Promise<AuthUser | null> {
-    const res = await fetch(`${BACKEND_API_URL}/api/auth/me`, {
-      credentials: 'include',
-    });
-    if (res.status === 401) return null;
-    const data = await parseJson(res);
-    if (!res.ok) return null;
-    return data?.user ?? null;
+  me(): Promise<AuthUser | null> {
+    if (!meInFlight) {
+      meInFlight = fetchMe().finally(() => {
+        meInFlight = null;
+      });
+    }
+
+    return meInFlight;
   },
 
   // POST /api/auth/logout
@@ -57,6 +88,7 @@ export const authApi = {
       method: 'POST',
       credentials: 'include',
     });
+
     if (!res.ok) {
       const data = await parseJson(res);
       throw new Error(data?.message || 'Logout failed');

@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useEffect, useState, useCallback } from 'react';
+import React, { createContext, useContext, useEffect, useState, useCallback, useRef } from 'react';
 import { authApi, AuthUser } from '../services/authApi';
 
 interface AuthContextValue {
@@ -14,14 +14,25 @@ const AuthContext = createContext<AuthContextValue | undefined>(undefined);
 export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [user, setUser] = useState<AuthUser | null>(null);
   const [loading, setLoading] = useState(true);
+  const authVersion = useRef(0);
 
   useEffect(() => {
     let active = true;
-    // GET /api/auth/me — restores the session (if any) on page load.
+
+    console.log("AUTH: checking session...");
+    const versionAtStart = authVersion.current;
     authApi
       .me()
       .then(u => {
-        if (active) setUser(u);
+        if (
+          active &&
+          authVersion.current === versionAtStart
+        ) {
+          setUser(u);
+        }
+      })
+      .catch(() => {
+        // leave user as-is
       })
       .finally(() => {
         if (active) setLoading(false);
@@ -30,23 +41,28 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
       active = false;
     };
   }, []);
-
   const login = useCallback(async (email: string, password: string) => {
     const u = await authApi.login(email, password);
+    authVersion.current++;
     setUser(u);
   }, []);
-
-  const register = useCallback(async (name: string, email: string, password: string) => {
+  const register = useCallback(async (
+    name: string,
+    email: string,
+    password: string
+  ) => {
     await authApi.register(name, email, password);
+
     const u = await authApi.login(email, password);
+
+    authVersion.current++;
     setUser(u);
   }, []);
-
   const logout = useCallback(async () => {
     await authApi.logout();
+    authVersion.current++;
     setUser(null);
   }, []);
-
   return (
     <AuthContext.Provider value={{ user, loading, login, register, logout }}>
       {children}

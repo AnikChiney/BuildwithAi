@@ -1,44 +1,55 @@
-const Report = require("../models/report_model");
+const {
+    getOverview,
+    groupCount,
+    getTimeline,
+    getHotspots,
+    getRecommendations,
+    getRecentReports,
+    getStatistics,
+} = require("../services/dashboardService");
 
 const overview = async (_req, res, next) => {
     try {
-        const [total, highPriority, categories, districts, languages] =
-            await Promise.all([
-                Report.countDocuments(),
-                Report.countDocuments({ urgency: { $in: ["high", "critical"] } }),
-                Report.distinct("category"),
-                Report.distinct("location.district"),
-                Report.distinct("originalLanguage"),
-            ]);
+        const data = await getOverview();
 
         res.json({
             success: true,
-            overview: {
-                totalReports: total,
-                highPriorityReports: highPriority,
-                categories: categories.length,
-                districts: districts.length,
-                languages: languages.length,
-            },
+            overview: data,
         });
     } catch (error) {
         next(error);
     }
 };
 
-const groupCount = (field) => async (_req, res, next) => {
+const groupedData = (field, responseKey = "data") => async (_req, res, next) => {
     try {
-        const rows = await Report.aggregate([
-            { $group: { _id: `$${field}`, count: { $sum: 1 } } },
-            { $sort: { count: -1 } },
-        ]);
+        const data = await groupCount(field);
 
         res.json({
             success: true,
-            data: rows.map((row) => ({
-                value: row._id || "Unknown",
-                count: row.count,
-            })),
+            [responseKey]: data,
+        });
+    } catch (error) {
+        next(error);
+    }
+};
+
+const categories = groupedData("category");
+const languages = groupedData("originalLanguage");
+const urgency = groupedData("urgency");
+const inputTypes = groupedData("inputType");
+const subcategories = groupedData("subcategory");
+const states = groupedData("location.state");
+const districts = groupedData("location.district");
+const processingStatus = groupedData("processingStatus");
+
+const timeline = async (req, res, next) => {
+    try {
+        const data = await getTimeline(req.query.days);
+
+        res.json({
+            success: true,
+            timeline: data,
         });
     } catch (error) {
         next(error);
@@ -47,43 +58,11 @@ const groupCount = (field) => async (_req, res, next) => {
 
 const hotspots = async (_req, res, next) => {
     try {
-        const rows = await Report.aggregate([
-            {
-                $group: {
-                    _id: {
-                        state: "$location.state",
-                        district: "$location.district",
-                        category: "$category",
-                    },
-                    count: { $sum: 1 },
-                    highPriority: {
-                        $sum: {
-                            $cond: [
-                                { $in: ["$urgency", ["high", "critical"]] },
-                                1,
-                                0,
-                            ],
-                        },
-                    },
-                    latitude: { $avg: "$location.latitude" },
-                    longitude: { $avg: "$location.longitude" },
-                },
-            },
-            { $sort: { count: -1, highPriority: -1 } },
-            { $limit: 50 },
-        ]);
+        const data = await getHotspots();
 
         res.json({
             success: true,
-            hotspots: rows.map((row) => ({
-                state: row._id.state,
-                district: row._id.district,
-                category: row._id.category,
-                reportCount: row.count,
-                highPriorityReports: row.highPriority,
-                latitude: row.latitude ?? null,
-                longitude: row.longitude ?? null,
-            })),
+            hotspots: data,
         });
     } catch (error) {
         next(error);
@@ -92,57 +71,38 @@ const hotspots = async (_req, res, next) => {
 
 const recommendations = async (_req, res, next) => {
     try {
-        const rows = await Report.aggregate([
-            {
-                $group: {
-                    _id: {
-                        state: "$location.state",
-                        district: "$location.district",
-                        category: "$category",
-                    },
-                    reportCount: { $sum: 1 },
-                    highPriorityReports: {
-                        $sum: {
-                            $cond: [
-                                { $in: ["$urgency", ["high", "critical"]] },
-                                1,
-                                0,
-                            ],
-                        },
-                    },
-                },
-            },
-            { $sort: { reportCount: -1, highPriorityReports: -1 } },
-            { $limit: 30 },
-        ]);
-
-        const interventionMap = {
-            Roads: "Road rehabilitation and maintenance",
-            Healthcare: "Primary healthcare infrastructure",
-            Education: "School infrastructure improvement",
-            Water: "Drinking water infrastructure",
-            Sanitation: "Sanitation infrastructure improvement",
-            Electricity: "Power infrastructure improvement",
-            "Public Transport": "Public transport infrastructure",
-            Housing: "Affordable housing and basic services",
-            Agriculture: "Agricultural infrastructure and support",
-            Employment: "Local employment and skill-development support",
-            "Digital Connectivity": "Digital connectivity infrastructure",
-            Other: "Further assessment of the reported need",
-        };
+        const data = await getRecommendations();
 
         res.json({
             success: true,
             note: "These are data-driven system suggestions, not official government decisions.",
-            recommendations: rows.map((row) => ({
-                state: row._id.state,
-                district: row._id.district,
-                category: row._id.category,
-                reportCount: row.reportCount,
-                highPriorityReports: row.highPriorityReports,
-                suggestedIntervention:
-                    interventionMap[row._id.category] || interventionMap.Other,
-            })),
+            recommendations: data,
+        });
+    } catch (error) {
+        next(error);
+    }
+};
+
+const recentReports = async (req, res, next) => {
+    try {
+        const data = await getRecentReports(req.query.limit);
+
+        res.json({
+            success: true,
+            reports: data,
+        });
+    } catch (error) {
+        next(error);
+    }
+};
+
+const statistics = async (req, res, next) => {
+    try {
+        const data = await getStatistics(req.query.days);
+
+        res.json({
+            success: true,
+            data,
         });
     } catch (error) {
         next(error);
@@ -151,9 +111,17 @@ const recommendations = async (_req, res, next) => {
 
 module.exports = {
     overview,
-    categories: groupCount("category"),
-    languages: groupCount("originalLanguage"),
-    urgency: groupCount("urgency"),
+    categories,
+    languages,
+    urgency,
+    inputTypes,
+    subcategories,
+    states,
+    districts,
+    processingStatus,
+    timeline,
     hotspots,
     recommendations,
+    recentReports,
+    statistics,
 };

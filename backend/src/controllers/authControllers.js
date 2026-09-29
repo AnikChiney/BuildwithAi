@@ -35,6 +35,12 @@ const login = (req, res, next) => {
         req.logIn(user, (loginError) => {
             if (loginError) return next(loginError);
 
+            console.log("\n===== LOGIN =====");
+            console.log("Session ID:", req.sessionID);
+            console.log("Authenticated:", req.isAuthenticated());
+            console.log("User:", req.user);
+            console.log("Session:", req.session);
+
             return res.json({
                 message: "Login successful",
                 user: {
@@ -48,8 +54,16 @@ const login = (req, res, next) => {
 };
 
 const me = (req, res) => {
+    console.log("\n===== ME =====");
+    console.log("Session ID:", req.sessionID);
+    console.log("Authenticated:", req.isAuthenticated());
+    console.log("User:", req.user);
+    console.log("Session:", req.session);
+
     if (!req.isAuthenticated()) {
-        return res.status(401).json({ message: "Authentication required" });
+        return res.status(401).json({
+            message: "Authentication required",
+        });
     }
 
     res.json({

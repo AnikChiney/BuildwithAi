@@ -7,14 +7,30 @@ import { GovernmentPage } from './pages/GovernmentPage';
 import { MethodPage } from './pages/MethodPage';
 import { NotFoundPage } from './pages/NotFoundPage';
 import { LoginPage } from './pages/LoginPage';
+import { ProtectedRoute } from './components/ProtectedRoute';
 
 export const AppRoutes: React.FC = () => <Routes>
-  <Route path="/" element={<LandingPage/>}/>
-  <Route path="/login" element={<LoginPage/>}/>
-  <Route path="/submit" element={<CitizenRequestPage/>}/>
-  <Route path="/submit/:requestId" element={<SubmissionStatusPage/>}/>
-  <Route path="/government/*" element={<GovernmentPage/>}/>
-  <Route path="/method" element={<MethodPage/>}/>
-  <Route path="/dashboard/*" element={<Navigate to="/government" replace/>}/>
-  <Route path="*" element={<NotFoundPage/>}/>
+  <Route path="/" element={<LandingPage />} />
+  <Route path="/login" element={<LoginPage />} />
+  <Route
+    path="/submit"
+    element={
+      <ProtectedRoute>
+        <CitizenRequestPage />
+      </ProtectedRoute>
+    }
+  />
+
+  <Route
+    path="/submit/:requestId"
+    element={
+      <ProtectedRoute>
+        <SubmissionStatusPage />
+      </ProtectedRoute>
+    }
+  />
+  <Route path="/government/*" element={<GovernmentPage />} />
+  <Route path="/method" element={<MethodPage />} />
+  <Route path="/dashboard/*" element={<Navigate to="/government" replace />} />
+  <Route path="*" element={<NotFoundPage />} />
 </Routes>;
